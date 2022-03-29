@@ -1,5 +1,3 @@
-
-
 <template>
   <div class="nav-link">
     <template v-for="item in navList" :key="item.text">
@@ -11,14 +9,16 @@
       </template>
     </template>
     <button class="nav-btn" aria-label="Toggle Theme" @click="toggle">
-      <!-- <ri-moon-line v-if="isDark" />
-      <ri-sun-line v-else /> -->
+      <riMoonLine v-if="isDark" />
+      <riSunLine v-else />
+      <span class="iconify" data-icon="ri:sun-line"></span>
     </button>
   </div>
   <div class="nav-mini">
-     <button class="nav-btn" aria-label="Toggle Theme" @click="toggle">
-      <!-- <ri-moon-line v-if="isDark" />
-      <ri-sun-line v-else /> -->
+    <button class="nav-btn" aria-label="Toggle Theme" @click="toggle">
+      <riMoonLine v-if="isDark" />
+      <riSunLine v-else />
+      <span class="iconify" data-icon="ri:sun-line"></span>
     </button>
   </div>
 </template>
@@ -27,6 +27,8 @@
   import NavDropdown from './navDropdown.vue';
   import { useData } from 'vitepress';
   import { useDark, useToggle } from '@vueuse/core';
+  import riMoonLine from '../icons/riMoonLine.vue';
+  import riSunLine from '../icons/riSunLine.vue';
   const props = defineProps({
     modelValue: {
       type: Array,
@@ -45,7 +47,8 @@
 </script>
 
 <style lang="scss" scoped>
-  .nav-link ,.nav-mini {
+  .nav-link,
+  .nav-mini {
     display: flex;
     font-weight: 500;
     align-items: center;
