@@ -1,7 +1,8 @@
 import { UserConfig } from 'vite';
 import WindiCSS from 'vite-plugin-windicss';
-import Icons, { ViteIconsResolver } from 'vite-plugin-icons';
-import Components, { AntDesignVueResolver } from 'vite-plugin-components';
+import Icons from 'unplugin-icons/vite'
+import IconsResolver from 'unplugin-icons/resolver'
+import Components from 'vite-plugin-components';
 import { resolve } from 'path'
 const config: UserConfig = {
   optimizeDeps: {
@@ -14,9 +15,7 @@ const config: UserConfig = {
         return id.endsWith('.md')
       },
       customComponentResolvers: [
-        ViteIconsResolver({
-          componentPrefix: '',
-        }),
+        IconsResolver(),
         // AntDesignVueResolver()
       ],
     }),

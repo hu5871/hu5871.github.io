@@ -106,19 +106,19 @@ yum install mysql-community-server
 
 wget 时提示 -bash:wget command not found,很明显没有安装wget软件包。一般[linux](https://so.csdn.net/so/search?from=pc_blog_highlight&q=linux)最小化安装时，wget不会默认被安装,安装wget
 
-```
+```bash
 yum install wget
 ```
 
 ### 启动服务
 
-```
+```bash
 systemctl start mysqld
 ```
 
 ### 重启服务
 
-```
+```bash
 systemctl restart mysqld
 ```
 
@@ -429,7 +429,7 @@ alter table 表名 character set 字符集;  --修改表的字符集
 
 - 例如：
 
-```mysql
+```
 INSERT INTO sort(sid,sname) VALUES('s001', '电器'); 
 
 INSERT INTO sort(sid,sname) VALUES('s002', '服饰');
@@ -497,7 +497,7 @@ use test;
 
 创建商品表：
 
-```mysql
+```
 #商品表
 
 CREATE TABLE product (
@@ -539,7 +539,7 @@ insert into category values(3,'国内服饰');#没有对应
 
 查看表中数据
 
-```mysql
+```
 select * from product;
 select * from category;
 ```
@@ -552,7 +552,7 @@ select * from category;
 
 ### 完整dql语法顺序
 
-```mysql
+```
 select distinct  
     < select_list >
 from 
@@ -610,25 +610,25 @@ limit < limit_number >
 
      表别名：
 
-     ```mysql
+     ```
      select * from product as p;
      ```
 
      列别名：
 
-     ```mysql
+     ```
      select pname as pn from product;
      ```
 
   4. 去掉重复值
 
-     ```mysql
+     ```
      select distinct price from product;
      ```
 
   5. 查询结果是表达式（运算查询）：将所有商品的价格+10元进行显示
 
-     ```mysql
+     ```
      select pname,price+10 from product;
      ```
 
@@ -644,7 +644,7 @@ limit < limit_number >
 
   1. 查询商品名称为十三香的商品所有信息
 
-     ```mysql
+     ```
      select * from product where pname = '十三香';
      ```
 
@@ -652,7 +652,7 @@ limit < limit_number >
 
   2. 查询商品价格 > 60元的所有商品信息；
 
-     ```mysql
+     ```
      select * from  product where price > 60;
      ```
 
@@ -918,7 +918,7 @@ limit < limit_number >
 
 首先看一下示例语句:
 
-```mysql
+```
 SELECT DISTINCT
     < select_list >
 FROM
@@ -937,7 +937,7 @@ LIMIT < limit_number >
 
 然而它的执行顺序是这样的:
 
-```mysql
+```
 --行过滤
  1 from <left_table>
  2 on <join_condition>
@@ -966,7 +966,7 @@ LIMIT < limit_number >
 
 对from的左边的表和右边的表计算 **笛卡尔积（cross join）**。产生 **虚表VT1**
 
-```mysql
+```
 mysql> select * from product,category;
 +-----+-----------------+-------+-------+------+----+--------------+
 | pid | pname           | price | pdate | cid  | id | cname        |
@@ -1002,7 +1002,7 @@ mysql> select * from product,category;
 
 **注意：**这里因为语法限制，使用了where代替，从中读者也可以感受到两者之间微妙的关系。
 
-```mysql
+```
 mysql> select * from product p,category c where p.cid=c.id;
 +-----+-----------------+-------+-------+------+----+--------------+
 | pid | pname           | price | pdate | cid  | id | cname        |
@@ -1022,7 +1022,7 @@ mysql> select * from product p,category c where p.cid=c.id;
 
 如果from子句中包含两个以上的表的话，那么就会对上一个join连接产生的结果vt3和下一个表重复执行步骤1～3三个步骤，一直到处理完所有的表为止。
 
-```mysql
+```
 mysql> select * from product p left outer join category c on p.cid=c.id;# 以左表 数据为准
 +-----+-----------------+-------+-------+------+------+--------------+
 | pid | pname           | price | pdate | cid  | id   | cname        |
@@ -1073,7 +1073,7 @@ mysql> select * from product p right outer join category c on p.cid=c.id;#以右
 
 - 对与关联表，先条件查询后连接则用on，先连接后条件查询则用where;
 
-  ```mysql
+  ```
   mysql> select * from product p left outer join category c on p.cid=c.id where p.pname='泰国大枣';
   +-----+--------------+-------+-------+------+------+--------------+
   | pid | pname        | price | pdate | cid  | id   | cname        |

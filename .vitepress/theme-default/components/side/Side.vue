@@ -1,17 +1,7 @@
-<!--
- * @Author: webhjc
- * @Date: 2021-12-05 13:58:26
- * @LastEditors: webhjc
- * @LastEditTime: 2022-03-27 01:38:32
- * @FilePath: /个人项目/blogPro/.vitepress/theme-default/components/side/Side.vue
- * @Description: 
- * 
- * Copyright (c) 2022 by 用户/公司名, All Rights Reserved. 
--->
 <template>
   <aside class="sidebar" :class="{ open: show }">
     <SideNav :headSide="headSide" />
-    <ul v-if="sidebar.length > 0" class="sidebar-links">
+    <ul v-if="sidebar?.length > 0" class="sidebar-links">
       <SideBarLink v-for="item of sidebar" :key="item.text" :item="item" />
     </ul>
   </aside>
@@ -40,7 +30,11 @@
   const items = cloneDeep(route.data?.headers as any);
   const sidebar = computed(() => {
     if (route.path.startsWith('/pages/')) {
-      const str = route.path.split('/pages/')[1]?.split('/')[0];
+      let str = route.path.split('/pages/');
+      if(str.length){
+       str= str[1].split('/')[0]
+      }
+
       return data.theme.value.sidebar[`/pages/${str}`];
     }
 

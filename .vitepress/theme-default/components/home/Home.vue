@@ -1,13 +1,4 @@
-<!--
- * @Author: webhjc
- * @Date: 2021-12-03 03:29:14
- * @LastEditors: webhjc
- * @LastEditTime: 2022-03-30 00:32:28
- * @FilePath: /个人项目/blogPro/.vitepress/theme-default/components/home/Home.vue
- * @Description: 
- * 
- * Copyright (c) 2022 by 用户/公司名, All Rights Reserved. 
--->
+
 <template>
   <div class="home">
     <div class="pre">

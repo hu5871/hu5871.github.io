@@ -16,13 +16,13 @@ import './style/custom-blocks.css'
 import './style/sidebar-links.css'
 import  './style/index.css';
 
+// import SideBarLinkItem from './components/side/sideBarLinkItem.vue'
 
 const theme: Theme = {
   Layout,
   NotFound,
-  enhanceApp({ app, router, siteData }) {
-    
-    // app.use(Antd)
+  enhanceApp({ app }){
+    // app.component('SideBarLinkItem',SideBarLinkItem)
   }
 }
 

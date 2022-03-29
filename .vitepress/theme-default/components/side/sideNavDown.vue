@@ -1,13 +1,3 @@
-<!--
- * @Author: webhjc
- * @Date: 2022-03-27 23:38:11
- * @LastEditors: webhjc
- * @LastEditTime: 2022-03-27 23:40:17
- * @FilePath: /个人项目/blogPro/.vitepress/theme-default/components/side/sideNavDown.vue
- * @Description: 
- * 
- * Copyright (c) 2022 by 用户/公司名, All Rights Reserved. 
--->
 <template>
   <div class="nav-dropdown-link" :class="{ open }">
     <button class="button" :aria-label="item?.ariaLabel" @click="toggle">

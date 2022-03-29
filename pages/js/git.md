@@ -83,4 +83,9 @@ git pull
 git stash pop
 ```
 
-  
+###   commit之后想撤销commit
+
+```bash
+git reset --soft HEAD^ 
+```
+

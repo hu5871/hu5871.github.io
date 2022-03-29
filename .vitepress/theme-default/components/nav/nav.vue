@@ -1,13 +1,3 @@
-<!--
- * @Author: webhjc
- * @Date: 2021-12-03 16:46:48
- * @LastEditors: webhjc
- * @LastEditTime: 2022-03-27 01:48:53
- * @FilePath: /个人项目/blogPro/.vitepress/theme-default/components/nav/nav.vue
- * @Description: 
- * 
- * Copyright (c) 2022 by 用户/公司名, All Rights Reserved. 
--->
 <template>
   <header class="nav-bar">
     <div class="showSide"  @click="$emit('toggle')"><MenuOutlined /></div>

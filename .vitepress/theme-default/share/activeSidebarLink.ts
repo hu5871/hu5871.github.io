@@ -1,5 +1,5 @@
-
 import { onMounted, onUnmounted, onUpdated } from 'vue'
+
 export function useActiveSidebarLinks() {
   let rootActiveLink: HTMLAnchorElement | null = null
   let activeLink: HTMLAnchorElement | null = null
@@ -7,7 +7,7 @@ export function useActiveSidebarLinks() {
   function setActiveLink(): void {
     const sidebarLinks = getSidebarLinks()
     const anchors = getAnchors(sidebarLinks)
-    for (let i = 0; i < anchors.length; i++) {
+    for (let i = 0; i < anchors?.length; i++) {
       const anchor = anchors[i]
       const nextAnchor = anchors[i + 1]
       const [isActive, hash] = isAnchorActive(i, anchor, nextAnchor)
@@ -66,7 +66,7 @@ function getSidebarLinks(): HTMLAnchorElement[] {
 function getAnchors(sidebarLinks: HTMLAnchorElement[]): HTMLAnchorElement[] {
   return [].slice
     .call(document.querySelectorAll('.header-anchor'))
-    .filter((anchor: HTMLAnchorElement) =>
+    ?.filter((anchor: HTMLAnchorElement) =>
       sidebarLinks.some((sidebarLink) => sidebarLink.hash === anchor.hash)
     ) as HTMLAnchorElement[]
 }

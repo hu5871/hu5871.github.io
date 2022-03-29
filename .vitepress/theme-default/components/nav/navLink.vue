@@ -1,13 +1,5 @@
-<!--
- * @Author: webhjc
- * @Date: 2021-12-03 21:01:13
- * @LastEditors: webhjc
- * @LastEditTime: 2022-03-27 22:15:50
- * @FilePath: /个人项目/blogPro/.vitepress/theme-default/components/nav/navLink.vue
- * @Description: 
- * 
- * Copyright (c) 2022 by 用户/公司名, All Rights Reserved. 
--->
+
+
 <template>
   <div class="nav-link">
     <template v-for="item in navList" :key="item.text">
@@ -19,14 +11,14 @@
       </template>
     </template>
     <button class="nav-btn" aria-label="Toggle Theme" @click="toggle">
-      <ri-moon-line v-if="isDark" />
-      <ri-sun-line v-else />
+      <!-- <ri-moon-line v-if="isDark" />
+      <ri-sun-line v-else /> -->
     </button>
   </div>
   <div class="nav-mini">
      <button class="nav-btn" aria-label="Toggle Theme" @click="toggle">
-      <ri-moon-line v-if="isDark" />
-      <ri-sun-line v-else />
+      <!-- <ri-moon-line v-if="isDark" />
+      <ri-sun-line v-else /> -->
     </button>
   </div>
 </template>

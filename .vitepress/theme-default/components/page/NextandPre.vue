@@ -1,13 +1,3 @@
-<!--
- * @Author: webhjc
- * @Date: 2022-03-28 18:14:22
- * @LastEditors: webhjc
- * @LastEditTime: 2022-03-28 18:14:22
- * @FilePath: /个人项目/blogPro/.vitepress/theme-default/components/NextandPre.vue
- * @Description: 
- * 
- * Copyright (c) 2022 by 用户/公司名, All Rights Reserved. 
--->
 <template>
   <div v-if="hasLinks" class="next-and-prev-link">
     <div class="container">

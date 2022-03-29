@@ -1,14 +1,3 @@
-/*
- * @Author: webhjc
- * @Date: 2022-03-28 19:02:08
- * @LastEditors: webhjc
- * @LastEditTime: 2022-03-28 19:08:28
- * @FilePath: /个人项目/blogPro/.vitepress/theme-default/share/sideBar.ts
- * @Description: 
- * 
- * Copyright (c) 2022 by 用户/公司名, All Rights Reserved. 
- */
-
 import { isArray, ensureStartingSlash, removeExtention } from '../utils'
 
 namespace DefaultTheme {

@@ -26,7 +26,7 @@ const {frontmatter}=useData()
 
 const frontmatterData=frontmatter.value
 const hasFeatures = computed(() => {
-  return frontmatterData.features && frontmatterData.features.length > 0
+  return frontmatterData.features && frontmatterData.features?.length > 0
 })
 
 const features = computed(() => {

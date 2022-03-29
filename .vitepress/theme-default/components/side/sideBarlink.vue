@@ -1,13 +1,3 @@
-<!--
- * @Author: webhjc
- * @Date: 2021-12-07 20:23:09
- * @LastEditors: webhjc
- * @LastEditTime: 2022-03-27 18:04:19
- * @FilePath: /个人项目/blogPro/.vitepress/theme-default/components/side/sideBarlink.vue
- * @Description: 
- * 
- * Copyright (c) 2022 by 用户/公司名, All Rights Reserved. 
--->
 <template>
   <li class="sidebar-link">
     <p class="sidebar-link-item" v-if="title">{{ title }} </p>

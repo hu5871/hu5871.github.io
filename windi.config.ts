@@ -1,4 +1,5 @@
 import { defineConfig } from 'vite-plugin-windicss';
+
 export default defineConfig({
   extract: {
     include: [
@@ -6,7 +7,7 @@ export default defineConfig({
       '.vitepress/theme/**/*.{md,vue}',
       '.vitepress/@slidev/client/internals/SlideContainer.vue',
       '.vitepress/@slidev/client/layouts/*.vue',
-      '.vitepress/@slidev/theme/layouts/*.vue',
+      '.vitepress/@slidev/theme-default/layouts/*.vue',
     ],
   },
   attributify: true,

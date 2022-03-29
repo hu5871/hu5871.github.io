@@ -1,14 +1,3 @@
-<!--
- * @Author: webhjc
- * @Date: 2022-03-27 23:07:05
- * @LastEditors: webhjc
- * @LastEditTime: 2022-03-27 23:18:44
- * @FilePath: /个人项目/blogPro/.vitepress/theme-default/components/side/sideNav.vue
- * @Description: 
- * 
- * Copyright (c) 2022 by 用户/公司名, All Rights Reserved. 
--->
-
 <template>
   <nav class="nav-links nav">
     <div  v-for="item in headSide">

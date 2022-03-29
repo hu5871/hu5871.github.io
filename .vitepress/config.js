@@ -1,13 +1,3 @@
-/*
- * @Author: webhjc
- * @Date: 2021-12-03 02:33:04
- * @LastEditors: webhjc
- * @LastEditTime: 2022-03-30 00:43:05
- * @FilePath: /个人项目/blogPro/.vitepress/config.js
- * @Description: 
- * 
- * Copyright (c) 2022 by 用户/公司名, All Rights Reserved. 
- */
 module.exports = {
   title: '前端',
   lang: 'zh-CN',
