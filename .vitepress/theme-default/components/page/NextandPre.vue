@@ -1,0 +1,99 @@
+<!--
+ * @Author: webhjc
+ * @Date: 2022-03-28 18:14:22
+ * @LastEditors: webhjc
+ * @LastEditTime: 2022-03-28 18:14:22
+ * @FilePath: /个人项目/blogPro/.vitepress/theme-default/components/NextandPre.vue
+ * @Description: 
+ * 
+ * Copyright (c) 2022 by 用户/公司名, All Rights Reserved. 
+-->
+<template>
+  <div v-if="hasLinks" class="next-and-prev-link">
+    <div class="container">
+      <div class="prev">
+        <a v-if="prev" class="link" :href="prev.link">
+          <ArrowLeft class="icon icon-prev" />
+          <span class="text">{{ prev.text }}</span>
+        </a>
+      </div>
+      <div class="next">
+        <a v-if="next" class="link" :href="next.link">
+          <span class="text">{{ next.text }}</span>
+          <ArrowRight class="icon icon-next" />
+        </a>
+      </div>
+    </div>
+  </div>
+</template>
+
+<script setup lang="ts">
+  import { useNextAndPrevLinks } from '../../share/nextandPre.ts';
+  import ArrowLeft from '../icons/ArrowLeft.vue';
+  import ArrowRight from '../icons/ArrowRight.vue';
+  const { hasLinks = true, prev = {}, next = {} } = useNextAndPrevLinks();
+</script>
+
+<style scoped>
+  .next-and-prev-link {
+    padding-top: 1rem;
+  }
+
+  .container {
+    display: flex;
+    justify-content: space-between;
+    border-top: 1px solid var(--c-divider);
+    padding-top: 1rem;
+  }
+  a {
+    text-decoration: none;
+  }
+
+  .prev,
+  .next {
+    display: flex;
+    flex-shrink: 0;
+    width: 50%;
+  }
+
+  .prev {
+    justify-content: flex-start;
+    padding-right: 12px;
+  }
+
+  .next {
+    justify-content: flex-end;
+    padding-left: 12px;
+  }
+
+  .link {
+    display: inline-flex;
+    align-items: center;
+    max-width: 100%;
+    font-size: 1rem;
+    font-weight: 500;
+  }
+
+  .text {
+    display: block;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+  }
+
+  .icon {
+    display: block;
+    flex-shrink: 0;
+    width: 16px;
+    height: 16px;
+    fill: var(--c-text);
+    transform: translateY(1px);
+  }
+
+  .icon-prev {
+    margin-right: 8px;
+  }
+  .icon-next {
+    margin-left: 8px;
+  }
+</style>

@@ -1,0 +1,27 @@
+{
+  "name": "blog",
+  "version": "1.0.0",
+  "author": "hu5871 <3578888835@qq.com>",
+  "scripts": {
+    "dev": "vitepress dev",
+    "build": "vitepress build",
+    "serve": "vitepress serve"
+  },
+  "devDependencies": {
+    "@types/node": "^16.11.11",
+    "prettier": "^2.5.0",
+    "vite-plugin-components": "^0.13.3",
+    "vite-plugin-icons": "^0.6.5",
+    "vite-plugin-windicss": "^1.5.4",
+    "vitepress": "^0.20.10",
+    "windicss": "^3.2.1"
+  },
+  "dependencies": {
+    "@ant-design/icons-vue": "^6.0.1",
+    "@iconify/json": "^1.1.437",
+    "@vueuse/core": "^7.1.2",
+    "ant-design-vue": "^2.2.8",
+    "lodash": "^4.17.21",
+    "sass": "^1.44.0"
+  }
+}
