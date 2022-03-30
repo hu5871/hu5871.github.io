@@ -15,11 +15,15 @@ const config: UserConfig = {
         return id.endsWith('.md')
       },
       customComponentResolvers: [
-        IconsResolver(),
+        IconsResolver({
+          customCollections:['ri-moon-line','ri-sun-line']
+        }),
         // AntDesignVueResolver()
       ],
     }),
-    Icons(),
+    Icons({
+      autoInstall:true,
+    }),
     WindiCSS({
       preflight: false,
     }),

@@ -61,7 +61,7 @@ git reset --hard <commit-id>
 - 删除远程分支 
 
   ```bash
-    git push origin --delete <分支名称>
+  git push origin --delete <分支名称>
   ```
 
 - 删除本地分支
@@ -88,4 +88,18 @@ git stash pop
 ```bash
 git reset --soft HEAD^ 
 ```
+
+### 关联远程仓库
+
+```bash
+git remote add origin 地址
+```
+
+### 取消远程仓库关联
+
+```bash
+git remote remove origin
+```
+
+
 

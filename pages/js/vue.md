@@ -12,7 +12,7 @@
 8. vuex
 9. Provide / inject
 
-### 
+
 
 ### vue2响应式原理
 
@@ -145,6 +145,16 @@ function defineReactive(obj,key,val){
    ![diff-updateChildren](./public/diff-updateChildren.png)
 
    
+
+### vue.use是干什么的原理是啥
+
+- 干什么的
+
+  `Vue.use` 是用来使用插件的，我们可以在插件中扩展全局组建、指令、原型方法等。
+
+- 原理是啥
+
+  ![Snipaste_2022-03-30_19-44-59](./public/Snipaste_2022-03-30_19-44-59.png)
 
 ### vue性能优化
 
