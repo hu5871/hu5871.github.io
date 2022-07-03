@@ -1,10 +1,36 @@
+前端大部分非组件类型的库都可在node中使用
+
 ## 前端
+
+### wavesurfer-js
+
+优秀的音频组件
+
+文档：[官网](https://wavesurfer-js.org/)
+
+
 
 ### transmat
 
  **跨越浏览器的边界，实现数据共享**
 
 github地址：[文档](https://github.com/google/transmat)
+
+
+
+### autoprefixer
+
+[Autoprefixer](https://github.com/ai/autoprefixer)解析CSS文件并且添加浏览器前缀到CSS规则里，使用[Can I Use](http://www.caniuse.com/)的数据来决定哪些前缀是需要的。
+
+
+
+### nanoid
+
+一个小巧、安全、URL友好、唯一的 JavaScript 字符串ID生成器
+
+文档：[nanoid](https://github.com/ai/nanoid/blob/main/README.zh-CN.md)
+
+
 
 ## node
 

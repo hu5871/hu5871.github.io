@@ -13,7 +13,7 @@
 <script setup lang="ts">
 import { ref, computed, watch, defineAsyncComponent } from 'vue';
 import { useRoute,useData } from 'vitepress';
-
+import "animate.css"
 import Nav from './components/nav/nav.vue';
 import Home from './components/home/Home.vue';
 import Side from './components/side/Side.vue';

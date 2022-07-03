@@ -7,12 +7,24 @@ module.exports = {
     nav: [
       { text: '源码', children: [{ text: 'vue3源码', link: '/pages/vue/reactivity' }] },
       { text: '面试题', children: [{ text: '面试题', link: '/pages/js/js' }] },
+      { text: 'TS', children: [{ text: 'typeScript', link: '/pages/ts/index' }] },
       { text: '数据库', children: [{ text: 'mysql', link: '/pages/mysql/mysql' }] },
       { text: '实用的库', children: [{ text: '实用的库', link: '/pages/useLibrary/index' }] },
-      
+      {
+        text: '数据结构与算法',
+        children: [
+          { text: '数据结构', link: '/pages/DSAA/dataStructure' },
+          { text: '算法', link: '/pages/DSAA/algorithm' },
+        ],
+      },
+      { text: '设计模式', children: [{ text: '设计模式', link: '/pages/designPattern/index' }] },
+      { text: '容器与集成部署', children: [{ text: 'docker', link: '/pages/containerAndIntegration/docker' },
+      { text: 'jenkins', link: '/pages/containerAndIntegration/jenkins' }] },
+      { text: 'ide', children: [{ text: 'vscode', link: '/pages/ide/index' }] },
+      { text: '其他工具', children: [{ text: '其他工具', link: '/pages/utils/index' }] },
     ],
     sidebar: createSidebar(),
-    base:'/',
+    base: '/',
     docsBranch: 'main',
     editLinks: true,
   },
@@ -59,7 +71,7 @@ function createSidebar() {
         ],
       },
     ],
-    '/pages/js':[
+    '/pages/js': [
       {
         text: '面试题',
         children: [
@@ -84,21 +96,28 @@ function createSidebar() {
             link: '/pages/js/http',
           },
           {
-            text: '数据结构',
-            link: '/pages/js/dataStructure',
-          },
-          {
-            text: '算法',
-            link: '/pages/js/algorithm',
-          },
-          {
             text: 'git',
             link: '/pages/js/git',
           }
         ],
       },
     ],
-    '/pages/mysql':[
+    '/pages/DSAA': [
+      {
+        text: '数据结构与算法',
+        children: [
+          {
+            text: '数据结构',
+            link: '/pages/DSAA/dataStructure',
+          },
+          {
+            text: '算法',
+            link: '/pages/DSAA/algorithm',
+          },
+        ],
+      },
+    ],
+    '/pages/mysql': [
       {
         text: 'MySQL',
         children: [
@@ -109,7 +128,7 @@ function createSidebar() {
         ],
       },
     ],
-    '/pages/useLibrary':[
+    '/pages/useLibrary': [
       {
         text: '让业务更简单',
         children: [
@@ -119,6 +138,65 @@ function createSidebar() {
           },
         ],
       },
-    ]
+    ],
+    '/pages/designPattern': [
+      {
+        text: '优雅永不过时',
+        children: [
+          {
+            text: '设计模式',
+            link: '/pages/designPattern/index',
+          },
+        ],
+      },
+    ],
+    '/pages/ts': [
+      {
+        text: 'typeScript',
+        children: [
+          {
+            text: 'ts',
+            link: '/pages/ts/index',
+          },
+        ],
+      },
+    ],
+    '/pages/containerAndIntegration': [
+      {
+        text: '容器与持续集成部署',
+        children: [
+          {
+            text: 'docker',
+            link: '/pages/containerAndIntegration/docker',
+          },
+          {
+            text: 'jenkins',
+            link: '/pages/containerAndIntegration/jenkins',
+          },
+        ],
+      },
+    ],
+    '/pages/ide': [
+      {
+        text: '插件减少繁琐内容',
+        children: [
+          {
+            text: 'vscode插件',
+            link: '/pages/ide/index',
+          },
+        ],
+      },
+    ],
+    '/pages/utils': [
+      {
+        text: '',
+        children: [
+          {
+            text: '优秀的工具',
+            link: '/pages/utils/index',
+          },
+        ],
+      },
+    ],
   };
 }

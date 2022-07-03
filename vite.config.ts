@@ -28,6 +28,9 @@ const config: UserConfig = {
       preflight: false,
     }),
   ],
+  server:{
+    port: 8888,
+  },
   resolve: {
     alias: {
       '@comps': resolve(__dirname, '.viteppress/theme/components') // 设置 `@` 指向 `src` 目录

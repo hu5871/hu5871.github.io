@@ -39,7 +39,7 @@ const features = computed(() => {
 <style lang="scss" scoped>
 .home-features {
   margin: 0 auto;
-  padding: 2.5rem 0 2.75rem;
+  padding: 2rem 0 2rem;
   max-width: 960px;
 }
 
@@ -49,7 +49,7 @@ const features = computed(() => {
 
 @media (min-width: 420px) {
   .home-features {
-    padding: 3.25rem 0 3rem;
+    padding: 2.25rem 0 3rem;
   }
 
   .home-hero + .home-features {
