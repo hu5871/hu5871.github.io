@@ -5,9 +5,9 @@
     <meta name="viewport" content="width=device-width,initial-scale=1">
     <title>从零到1掌握mySQL | 前端</title>
     <meta name="description" content="记录一些有趣的">
-    <link rel="stylesheet" href="/assets/style.9e31a587.css">
-    <link rel="modulepreload" href="/assets/app.9fda2e54.js">
-    <link rel="modulepreload" href="/assets/pages_mysql_mysql.md.045fa5b9.lean.js">
+    <link rel="stylesheet" href="/assets/style.b543def0.css">
+    <link rel="modulepreload" href="/assets/app.9bf12d60.js">
+    <link rel="modulepreload" href="/assets/pages_mysql_mysql.md.3b988821.lean.js">
     
     <meta name="author" content="Vbenjs Team">
   <meta name="keywords" content="vben, vitejs, vite, ant-design-vue, vue">
@@ -15,347 +15,346 @@
   <meta name="viewport" content="width=device-width,initial-scale=1,minimum-scale=1.0,maximum-scale=1.0,user-scalable=no">
   <meta name="keywords" content="vue vben admin docs">
   <link rel="icon" href="/favicon.ico">
-  <meta name="twitter:title" content="从零到1掌握mySQL | 前端">
-  <meta property="og:title" content="从零到1掌握mySQL | 前端">
+  <script>(()=>{const e=localStorage.getItem("vitepress-theme-appearance"),a=window.matchMedia("(prefers-color-scheme: dark)").matches;(!e||e==="auto"?a:e==="dark")&&document.documentElement.classList.add("dark")})();</script>
   </head>
   <body>
-    <div id="app"><div class="theme"><header class="nav-bar" data-v-2a5924c9><div class="showSide" data-v-2a5924c9><span role="img" aria-label="menu" class="anticon anticon-menu" data-v-2a5924c9><svg focusable="false" class="" style="" data-icon="menu" width="1em" height="1em" fill="currentColor" aria-hidden="true" viewbox="64 64 896 896"><path d="M904 160H120c-4.4 0-8 3.6-8 8v64c0 4.4 3.6 8 8 8h784c4.4 0 8-3.6 8-8v-64c0-4.4-3.6-8-8-8zm0 624H120c-4.4 0-8 3.6-8 8v64c0 4.4 3.6 8 8 8h784c4.4 0 8-3.6 8-8v-64c0-4.4-3.6-8-8-8zm0-312H120c-4.4 0-8 3.6-8 8v64c0 4.4 3.6 8 8 8h784c4.4 0 8-3.6 8-8v-64c0-4.4-3.6-8-8-8z"></path></svg></span></div><div data-v-2a5924c9><span data-v-2a5924c9>前端博客</span></div><div class="flex-grow" data-v-2a5924c9></div><!--[--><div class="nav-link" data-v-9c461d30><!--[--><!--[--><div class="item" data-v-9c461d30><div class="nav-dropdown-link navDrop" data-v-9c461d30 data-v-6ecf7aae><button class="button" data-v-6ecf7aae><span class="button-text" data-v-6ecf7aae>源码</span><span class="button-arrow" data-v-6ecf7aae></span></button><ul class="dialog" data-v-6ecf7aae><!--[--><li class="dialog-item" data-v-6ecf7aae><div class="nav-dropdown-link-item" data-v-6ecf7aae><a class="item" href="/pages/vue/reactivity" data-v-6ecf7aae><span class="arrow" data-v-6ecf7aae></span><span class="text" data-v-6ecf7aae>vue3源码</span><span class="icon" data-v-6ecf7aae><svg class="icon outbound" xmlns="http://www.w3.org/2000/svg" aria-hidden="true" x="0px" y="0px" viewbox="0 0 100 100" width="15" height="15" data-v-6ecf7aae><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path><polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg></span></a></div></li><!--]--></ul></div></div><!--]--><!--[--><div class="item" data-v-9c461d30><div class="nav-dropdown-link navDrop" data-v-9c461d30 data-v-6ecf7aae><button class="button" data-v-6ecf7aae><span class="button-text" data-v-6ecf7aae>面试题</span><span class="button-arrow" data-v-6ecf7aae></span></button><ul class="dialog" data-v-6ecf7aae><!--[--><li class="dialog-item" data-v-6ecf7aae><div class="nav-dropdown-link-item" data-v-6ecf7aae><a class="item" href="/pages/js/js" data-v-6ecf7aae><span class="arrow" data-v-6ecf7aae></span><span class="text" data-v-6ecf7aae>面试题</span><span class="icon" data-v-6ecf7aae><svg class="icon outbound" xmlns="http://www.w3.org/2000/svg" aria-hidden="true" x="0px" y="0px" viewbox="0 0 100 100" width="15" height="15" data-v-6ecf7aae><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path><polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg></span></a></div></li><!--]--></ul></div></div><!--]--><!--[--><div class="item" data-v-9c461d30><div class="nav-dropdown-link navDrop" data-v-9c461d30 data-v-6ecf7aae><button class="button" data-v-6ecf7aae><span class="button-text" data-v-6ecf7aae>数据库</span><span class="button-arrow" data-v-6ecf7aae></span></button><ul class="dialog" data-v-6ecf7aae><!--[--><li class="dialog-item" data-v-6ecf7aae><div class="nav-dropdown-link-item" data-v-6ecf7aae><a class="item" href="/pages/mysql/mysql" data-v-6ecf7aae><span class="arrow" data-v-6ecf7aae></span><span class="text" data-v-6ecf7aae>mysql</span><span class="icon" data-v-6ecf7aae><svg class="icon outbound" xmlns="http://www.w3.org/2000/svg" aria-hidden="true" x="0px" y="0px" viewbox="0 0 100 100" width="15" height="15" data-v-6ecf7aae><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path><polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg></span></a></div></li><!--]--></ul></div></div><!--]--><!--[--><div class="item" data-v-9c461d30><div class="nav-dropdown-link navDrop" data-v-9c461d30 data-v-6ecf7aae><button class="button" data-v-6ecf7aae><span class="button-text" data-v-6ecf7aae>实用的库</span><span class="button-arrow" data-v-6ecf7aae></span></button><ul class="dialog" data-v-6ecf7aae><!--[--><li class="dialog-item" data-v-6ecf7aae><div class="nav-dropdown-link-item" data-v-6ecf7aae><a class="item" href="/pages/useLibrary/index" data-v-6ecf7aae><span class="arrow" data-v-6ecf7aae></span><span class="text" data-v-6ecf7aae>实用的库</span><span class="icon" data-v-6ecf7aae><svg class="icon outbound" xmlns="http://www.w3.org/2000/svg" aria-hidden="true" x="0px" y="0px" viewbox="0 0 100 100" width="15" height="15" data-v-6ecf7aae><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path><polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg></span></a></div></li><!--]--></ul></div></div><!--]--><!--]--><button class="nav-btn" aria-label="Toggle Theme" data-v-9c461d30><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" role="img" width="1em" height="1em" preserveaspectratio="xMidYMid meet" viewbox="0 0 24 24" data-v-9c461d30><path fill="currentColor" d="M12 18a6 6 0 1 1 0-12a6 6 0 0 1 0 12zm0-2a4 4 0 1 0 0-8a4 4 0 0 0 0 8zM11 1h2v3h-2V1zm0 19h2v3h-2v-3zM3.515 4.929l1.414-1.414L7.05 5.636L5.636 7.05L3.515 4.93zM16.95 18.364l1.414-1.414l2.121 2.121l-1.414 1.414l-2.121-2.121zm2.121-14.85l1.414 1.415l-2.121 2.121l-1.414-1.414l2.121-2.121zM5.636 16.95l1.414 1.414l-2.121 2.121l-1.414-1.414l2.121-2.121zM23 11v2h-3v-2h3zM4 11v2H1v-2h3z"></path></svg><span class="iconify" data-icon="ri:sun-line" data-v-9c461d30></span></button></div><div class="nav-mini" data-v-9c461d30><button class="nav-btn" aria-label="Toggle Theme" data-v-9c461d30><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" role="img" width="1em" height="1em" preserveaspectratio="xMidYMid meet" viewbox="0 0 24 24" data-v-9c461d30><path fill="currentColor" d="M12 18a6 6 0 1 1 0-12a6 6 0 0 1 0 12zm0-2a4 4 0 1 0 0-8a4 4 0 0 0 0 8zM11 1h2v3h-2V1zm0 19h2v3h-2v-3zM3.515 4.929l1.414-1.414L7.05 5.636L5.636 7.05L3.515 4.93zM16.95 18.364l1.414-1.414l2.121 2.121l-1.414 1.414l-2.121-2.121zm2.121-14.85l1.414 1.415l-2.121 2.121l-1.414-1.414l2.121-2.121zM5.636 16.95l1.414 1.414l-2.121 2.121l-1.414-1.414l2.121-2.121zM23 11v2h-3v-2h3zM4 11v2H1v-2h3z"></path></svg><span class="iconify" data-icon="ri:sun-line" data-v-9c461d30></span></button></div><!--]--></header><!----><aside class="sidebar" data-v-8e164692><nav class="nav-links nav" data-v-8e164692 data-v-c1117b78><!--[--><div data-v-c1117b78><div class="nav-dropdown-link" data-v-c1117b78 data-v-10889c82><button class="button" data-v-10889c82><span class="button-text" data-v-10889c82>源码</span><span class="right button-arrow" data-v-10889c82></span></button><ul class="dialog" data-v-10889c82><!--[--><li class="dialog-item" data-v-10889c82><div class="nav-dropdown-link-item" data-v-10889c82><a class="item" href="/pages/vue/reactivity" data-v-10889c82><span class="arrow" data-v-10889c82></span><span class="text" data-v-10889c82>vue3源码</span></a></div></li><!--]--></ul></div></div><div data-v-c1117b78><div class="nav-dropdown-link" data-v-c1117b78 data-v-10889c82><button class="button" data-v-10889c82><span class="button-text" data-v-10889c82>面试题</span><span class="right button-arrow" data-v-10889c82></span></button><ul class="dialog" data-v-10889c82><!--[--><li class="dialog-item" data-v-10889c82><div class="nav-dropdown-link-item" data-v-10889c82><a class="item" href="/pages/js/js" data-v-10889c82><span class="arrow" data-v-10889c82></span><span class="text" data-v-10889c82>面试题</span></a></div></li><!--]--></ul></div></div><div data-v-c1117b78><div class="nav-dropdown-link" data-v-c1117b78 data-v-10889c82><button class="button" data-v-10889c82><span class="button-text" data-v-10889c82>数据库</span><span class="right button-arrow" data-v-10889c82></span></button><ul class="dialog" data-v-10889c82><!--[--><li class="dialog-item" data-v-10889c82><div class="nav-dropdown-link-item" data-v-10889c82><a class="item" href="/pages/mysql/mysql" data-v-10889c82><span class="arrow" data-v-10889c82></span><span class="text" data-v-10889c82>mysql</span></a></div></li><!--]--></ul></div></div><div data-v-c1117b78><div class="nav-dropdown-link" data-v-c1117b78 data-v-10889c82><button class="button" data-v-10889c82><span class="button-text" data-v-10889c82>实用的库</span><span class="right button-arrow" data-v-10889c82></span></button><ul class="dialog" data-v-10889c82><!--[--><li class="dialog-item" data-v-10889c82><div class="nav-dropdown-link-item" data-v-10889c82><a class="item" href="/pages/useLibrary/index" data-v-10889c82><span class="arrow" data-v-10889c82></span><span class="text" data-v-10889c82>实用的库</span></a></div></li><!--]--></ul></div></div><!--]--></nav><ul class="sidebar-links" data-v-8e164692><!--[--><li class="sidebar-link" data-v-8e164692><p class="sidebar-link-item">MySQL</p><ul class="sidebar-links"><!--[--><li class="sidebar-link"><a class="active sidebar-link-item" href="/pages/mysql/mysql">mysql</a><ul class="sidebar-links"><!--[--><li class="sidebar-link"><a class="sidebar-link-item" href="#理解关系型数据库的概念">理解关系型数据库的概念</a><ul class="sidebar-links"><!--[--><li class="sidebar-link"><a class="sidebar-link-item" href="#数据库概述">数据库概述</a><!----></li><!--]--></ul></li><li class="sidebar-link"><a class="sidebar-link-item" href="#了解mysql历史">了解mysql历史</a><ul class="sidebar-links"><!--[--><!--]--></ul></li><li class="sidebar-link"><a class="sidebar-link-item" href="#掌握mysql在linux下的安装和远程连接">掌握mysql在linux下的安装和远程连接</a><ul class="sidebar-links"><!--[--><li class="sidebar-link"><a class="sidebar-link-item" href="#mysql基础">mysql基础</a><!----></li><li class="sidebar-link"><a class="sidebar-link-item" href="#安装mysql">安装mysql</a><!----></li><li class="sidebar-link"><a class="sidebar-link-item" href="#启动服务">启动服务</a><!----></li><li class="sidebar-link"><a class="sidebar-link-item" href="#重启服务">重启服务</a><!----></li><li class="sidebar-link"><a class="sidebar-link-item" href="#mysql的卸载">mysql的卸载</a><!----></li><li class="sidebar-link"><a class="sidebar-link-item" href="#登录mysql">登录mysql</a><!----></li><li class="sidebar-link"><a class="sidebar-link-item" href="#退出mysql命令行命令">退出mysql命令行命令</a><!----></li><li class="sidebar-link"><a class="sidebar-link-item" href="#配置mysql">配置mysql</a><!----></li><!--]--></ul></li><li class="sidebar-link"><a class="sidebar-link-item" href="#mysql远程连接授权">mysql远程连接授权</a><ul class="sidebar-links"><!--[--><li class="sidebar-link"><a class="sidebar-link-item" href="#关闭防火墙">关闭防火墙</a><!----></li><li class="sidebar-link"><a class="sidebar-link-item" href="#客户端远程访问">客户端远程访问</a><!----></li><!--]--></ul></li><li class="sidebar-link"><a class="sidebar-link-item" href="#ddl语句">ddl语句</a><ul class="sidebar-links"><!--[--><li class="sidebar-link"><a class="sidebar-link-item" href="#创建数据库">创建数据库</a><!----></li><li class="sidebar-link"><a class="sidebar-link-item" href="#查看数据库">查看数据库</a><!----></li><li class="sidebar-link"><a class="sidebar-link-item" href="#删除数据库">删除数据库</a><!----></li><li class="sidebar-link"><a class="sidebar-link-item" href="#其他数据库操作命令">其他数据库操作命令</a><!----></li><li class="sidebar-link"><a class="sidebar-link-item" href="#查看正在使用的数据库；">查看正在使用的数据库；</a><!----></li><li class="sidebar-link"><a class="sidebar-link-item" href="#表操作：table">表操作：table</a><!----></li><li class="sidebar-link"><a class="sidebar-link-item" href="#字段类型">字段类型</a><!----></li><li class="sidebar-link"><a class="sidebar-link-item" href="#创建表">创建表</a><!----></li><li class="sidebar-link"><a class="sidebar-link-item" href="#查看表">查看表</a><!----></li><li class="sidebar-link"><a class="sidebar-link-item" href="#删除表">删除表</a><!----></li><li class="sidebar-link"><a class="sidebar-link-item" href="#修改表">修改表</a><!----></li><!--]--></ul></li><li class="sidebar-link"><a class="sidebar-link-item" href="#dml语句">DML语句</a><ul class="sidebar-links"><!--[--><li class="sidebar-link"><a class="sidebar-link-item" href="#插入记录：insert">插入记录：insert</a><!----></li><li class="sidebar-link"><a class="sidebar-link-item" href="#更新记录：update">更新记录：update</a><!----></li><li class="sidebar-link"><a class="sidebar-link-item" href="#删除记录：delete">删除记录：delete</a><!----></li><!--]--></ul></li><li class="sidebar-link"><a class="sidebar-link-item" href="#dql语句">dql语句</a><ul class="sidebar-links"><!--[--><li class="sidebar-link"><a class="sidebar-link-item" href="#完整dql语法顺序">完整dql语法顺序</a><!----></li><li class="sidebar-link"><a class="sidebar-link-item" href="#子查询">子查询</a><!----></li><!--]--></ul></li><li class="sidebar-link"><a class="sidebar-link-item" href="#理解sql解析顺序">理解sql解析顺序</a><ul class="sidebar-links"><!--[--><li class="sidebar-link"><a class="sidebar-link-item" href="#from">from</a><!----></li><li class="sidebar-link"><a class="sidebar-link-item" href="#on过滤">on过滤</a><!----></li><li class="sidebar-link"><a class="sidebar-link-item" href="#outer join添加外部列">outer join添加外部列</a><!----></li><li class="sidebar-link"><a class="sidebar-link-item" href="#where">where</a><!----></li><!--]--></ul></li><li class="sidebar-link"><a class="sidebar-link-item" href="#理解多表间关联">理解多表间关联</a><ul class="sidebar-links"><!--[--><!--]--></ul></li><li class="sidebar-link"><a class="sidebar-link-item" href="#掌握多表关联查询及子查询">掌握多表关联查询及子查询</a><ul class="sidebar-links"><!--[--><!--]--></ul></li><!--]--></ul></li><!--]--></ul></li><!--]--></ul></aside><div class="sidebar-mask"></div><div class="page" data-v-76de30a3><div class="container" data-v-76de30a3><div class="content" data-v-76de30a3><div style="position:relative;" data-v-76de30a3><div><h1 id="从零到1掌握mysql" tabindex="-1">从零到1掌握mySQL <a class="header-anchor" href="#从零到1掌握mysql" aria-hidden="true">#</a></h1><h2 id="理解关系型数据库的概念" tabindex="-1">理解关系型数据库的概念 <a class="header-anchor" href="#理解关系型数据库的概念" aria-hidden="true">#</a></h2><blockquote><p>如果你对这些不感兴趣，可以跳过</p></blockquote><h3 id="数据库概述" tabindex="-1">数据库概述 <a class="header-anchor" href="#数据库概述" aria-hidden="true">#</a></h3><h4 id="什么是数据库" tabindex="-1">什么是数据库 <a class="header-anchor" href="#什么是数据库" aria-hidden="true">#</a></h4><blockquote><p>数据库就是储存数据的仓库，其本质就是一个[文件系统]，数据按照特定的格式储存起来，用户可以通过SQL对数据库中的数据进行增加、删除、修改、查询操作</p></blockquote><h4 id="什么是关系型数据库" tabindex="-1">什么是关系型数据库 <a class="header-anchor" href="#什么是关系型数据库" aria-hidden="true">#</a></h4><blockquote><p>数据库中的记录是有行有列的就是关系型数据库，与之相反的就是NoSQL数据库</p></blockquote><h4 id="数据库和表" tabindex="-1">数据库和表 <a class="header-anchor" href="#数据库和表" aria-hidden="true">#</a></h4><p><img src="/assets/mysql.659dd8d9.png" alt=""></p><blockquote><p>数据库管理系统：指一种[操作和管理数据库]的大型软件，用于建立、使用和维护数据库，对数据库进行统一管理和控制，以保证数据库的安全性和完整性。用户通过数据库管理系统访问数据库中表内的数据</p></blockquote><h2 id="了解mysql历史" tabindex="-1">了解mysql历史 <a class="header-anchor" href="#了解mysql历史" aria-hidden="true">#</a></h2><blockquote><p>- MySQL的历史可以追溯到1979年，一个名为Monty Widenius的程序员在为TcX的小公司打工，并且用 BASIC设计了一个报表工具，使其可以在4MHz主频和16KB内存的计算机上运行。当时，这只是一个很底层的 且仅面向报表的存储引擎，名叫Unireg。</p><p>- 1990年，TcX公司的客户中开始有人要求为他的API提供SQL支持。Monty直接借助于mSQL的代码，将 它集成到自己的存储引擎中。令人失望的是，效果并不太令人满意，决心自己重写一个SQL支持。</p><p>- 1996年，MySQL 1.0发布，它只面向一小拨人，相当于内部发布</p><p>1990年，TcX公司的客户中开始有人要求为他的API提供SQL支持。Monty直接借助于mSQL的代码，将 它集成到自己的存储引擎中。令人失望的是，效果并不太令人满意，决心自己重写一个SQL支持。</p><p>- 1996年，MySQL 1.0发布，它只面向一小拨人，相当于内部发布。</p><p>- 到了1996年10月，MySQL 3.11.1发布(MySQL没有2.x版本)，最开始只提供Solaris下的二进制版 本。一个月后，Linux版本出现了。在接下来的两年里，MySQL被依次移植到各个平台。</p><p>- 【1999~2000年】，【MySQL AB】公司在瑞典成立。Monty雇了几个人与Sleepycat合作，开发出 了【Berkeley DB引擎】, 由于BDB支持事务处理，因此MySQL从此开始支持事务处理了。</p><p>- 2000，MySQL不仅公布自己的源代码，并采用GPL(GNU General Public License)许可协议，正 式进入开源世界。同年4月，MySQL对旧的存储引擎ISAM进行了整理，将其命名为MyISAM。</p><p>- 2001年，集成Heikki Tuuri的存储引擎【InnoDB】，这个引擎不仅能【支持事务处理，并且支持行 级锁】。后来该引擎被证明是最为成功的MySQL事务存储引擎。【MySQL与InnoDB的正式结合版本是4.0】</p><p>- 2003年12月，【MySQL 5.0】版本发布，提供了视图、存储过程等功能。 - 【2008年1月】，【MySQL AB公司被Sun公司以10亿美金收购】，MySQL数据库进入Sun时代。在Sun</p><p>时代，Sun公司对其进行了大量的推广、优化、Bug修复等工作。 - 2008年11月，MySQL 5.1发布，它提供了分区、事件管理，以及基于行的复制和基于磁盘的NDB集群系</p><p>统，同时修复了大量的Bug。 - 【2009年4月】，Oracle公司以74亿美元收购Sun公司，自此MySQL数据库进入Oracle时代，而其第</p><p>三方的存储引擎InnoDB早在2005年就被Oracle公司收购。</p><p>- 2010年12月，【MySQL 5.5发布】，其主要新特性包括半同步的复制及对SIGNAL/RESIGNAL的异常 处理功能的支持，【最重要的是InnoDB存储引擎终于变为当前MySQL的默认存储引擎】。MySQL 5.5不是时 隔两年后的一次简单的版本更新，而是加强了MySQL各个方面在企业级的特性。Oracle公司同时也承诺 MySQL 5.5和未来版本仍是采用GPL授权的开源产品</p></blockquote><h4 id="sql" tabindex="-1">SQL <a class="header-anchor" href="#sql" aria-hidden="true">#</a></h4><blockquote><p>​ SQL是Structured Query Language的缩写】，它的前身是著名的关系数据库原型系统System R所采 用的SEQUEL语言。作为一种访问【关系型数据库的标准语言】，SQL自问世以来得到了广泛的应用，不仅是著 名的大型商用数据库产品Oracle、DB2、Sybase、SQL Server支持它，很多开源的数据库产品如 PostgreSQL、MySQL也支持它，甚至一些小型的产品如Access也支持SQL。近些年蓬勃发展的NoSQL系统 最初是宣称不再需要SQL的，后来也不得不修正为Not Only SQL，来拥抱SQL。</p><p>蓝色巨人IBM对关系数据库以及SQL语言的形成和规范化产生了重大的影响，第一个版本的SQL标准SQL86 就是基于System R的手册而来的。Oracle在1979年率先推出了支持SQL的商用产品。随着数据库技术和应 用的发展，为不同RDBMS提供一致的语言成了一种现实需要。</p><p>对SQL标准影响最大的机构自然是那些著名的数据库产商，而具体的制订者则是一些非营利机构，例如 【国际标准化组织ISO、美国国家标准委员会ANSI】等。各国通常会按照 ISO标准和ANSI标准(这两个机构 的很多标准是差不多等同的)制定自己的国家标准。中国是ISO标准委员会的成员国，也经常翻译一些国际标 准对应的中文版。标准为了避免采用具体产品的术语，往往会抽象出很多名词，从而增加了阅读和理解的难 度，翻译成中文之后更容易词不达意。对于数据库系统实现者和用户而言，很多时候还不如直接读英文版本为 好。虽然正式的标准不像RFC那样可以从网络上免费获得，标准草案还是比较容易找到的(例如: <a href="http://www.jtc1sc32.org/doc/" target="_blank" rel="noopener noreferrer">http://www.jtc1sc32.org/doc/</a>)。待批准的标准草案和最终的标准也没有什么实质上的区别，能够满 足日常工作的需要。</p><p>下面是SQL发展的简要历史: 1986年，ANSI X3.135-1986，ISO/IEC 9075:1986，SQL-86 1989年，ANSI X3.135-1989，ISO/IEC 9075:1989，SQL-89 1992年，ANSI X3.135-1992，ISO/IEC 9075:1992，SQL-92(SQL2) 1999年，ISO/IEC 9075:1999，SQL:1999(SQL3)</p><p>2003年，ISO/IEC 9075:2003，SQL:2003 2008年，ISO/IEC 9075:2008，SQL:2008 2011年，ISO/IEC 9075:2011，SQL:2011</p><p>如果要了解标准的内容，比较推荐的方法是【泛读SQL92】(因为它涉及了SQL最基础和最核心的一些内 容)，然后增量式的阅读其他标准。</p></blockquote><blockquote><p>不只是mysql还有其他数据库，在SQL92或者SQL99这些国际SQL标准基础之上，它们还扩展了自己的一些 SQL语句，比如MySQL中的limit关键字</p></blockquote><h4 id="sql语言分类" tabindex="-1">Sql语言分类 <a class="header-anchor" href="#sql语言分类" aria-hidden="true">#</a></h4><blockquote><p>- 数据定义语言:简称【DDL】(Data Definition Language)，用来定义数据库对象:数据库，表，列 等。关键字:create，alter，drop等</p><p>- 数据操作语言:简称【DML】(Data Manipulation Language)，用来对数据库中表的记录进行更 新。关键字:insert，delete，update等</p><p>- 数据控制语言:简称【DCL】(Data Control Language)，用来定义数据库的访问权限和安全级别， 及创建用户;关键字:grant等</p><p>- 数据查询语言:简称【DQL】(Data Query Language)，用来查询数据库中表的记录。关键字: select，from，where等</p></blockquote><h2 id="掌握mysql在linux下的安装和远程连接" tabindex="-1">掌握mysql在linux下的安装和远程连接 <a class="header-anchor" href="#掌握mysql在linux下的安装和远程连接" aria-hidden="true">#</a></h2><h3 id="mysql基础" tabindex="-1">mysql基础 <a class="header-anchor" href="#mysql基础" aria-hidden="true">#</a></h3><blockquote><p>使用虚拟机</p><p>操作系统：centOS 7.+</p><p>MySQL: 5.6</p></blockquote><h3 id="安装mysql" tabindex="-1">安装mysql <a class="header-anchor" href="#安装mysql" aria-hidden="true">#</a></h3><div class="language-bash"><pre><code><span class="token comment">#下载rpm文件</span>
-<span class="token function">wget</span> http://repo.mysql.com/mysql-community-release-el6-5.noarch.rpm <span class="token comment">#执行rpm源文件</span>
-<span class="token function">rpm</span> -ivh mysql-community-release-el6-5.noarch.rpm
-<span class="token comment">#执行安装文件</span>
-yum <span class="token function">install</span> mysql-community-server
-</code></pre></div><p>wget 时提示 -bash:wget command not found,很明显没有安装wget软件包。一般<a href="https://so.csdn.net/so/search?from=pc_blog_highlight&amp;q=linux" target="_blank" rel="noopener noreferrer">linux</a>最小化安装时，wget不会默认被安装,安装wget</p><div class="language-bash"><pre><code>yum <span class="token function">install</span> <span class="token function">wget</span>
-</code></pre></div><h3 id="启动服务" tabindex="-1">启动服务 <a class="header-anchor" href="#启动服务" aria-hidden="true">#</a></h3><div class="language-bash"><pre><code>systemctl start mysqld
-</code></pre></div><h3 id="重启服务" tabindex="-1">重启服务 <a class="header-anchor" href="#重启服务" aria-hidden="true">#</a></h3><div class="language-bash"><pre><code>systemctl restart mysqld
-</code></pre></div><h3 id="mysql的卸载" tabindex="-1"><strong>mysql的卸载</strong> <a class="header-anchor" href="#mysql的卸载" aria-hidden="true">#</a></h3><h4 id="查看mysql" tabindex="-1">查看mysql <a class="header-anchor" href="#查看mysql" aria-hidden="true">#</a></h4><div class="language-"><pre><code>rpm -qa|grep mysql
-yum repolist all | grep mysql
-</code></pre></div><h4 id="卸载mysql" tabindex="-1">卸载mysql <a class="header-anchor" href="#卸载mysql" aria-hidden="true">#</a></h4><div class="language-bash"><pre><code>yum remove -y mysql mysql-libs mysql-common <span class="token comment">#卸载mysql</span>
-<span class="token function">rm</span> -rf /var/lib/mysql <span class="token comment">#删除mysql下的数据文件</span>
-<span class="token function">rm</span> /etc/my.cnf <span class="token comment">#删除mysql配置文件</span>
-yum remove -y mysql-community-release-el6-5.noarch <span class="token comment">#删除组件</span>
-</code></pre></div><h4 id="设置root用户密码" tabindex="-1">设置root用户密码 <a class="header-anchor" href="#设置root用户密码" aria-hidden="true">#</a></h4><div class="language-"><pre><code>没设置过密码
-/usr/bin/mysqladmin -u root password &#39;root&#39;
-
-设置过密码
-/usr/bin/mysqladmin -u root -p &#39;旧密码&#39; password &#39;root&#39;
-</code></pre></div><h3 id="登录mysql" tabindex="-1">登录mysql <a class="header-anchor" href="#登录mysql" aria-hidden="true">#</a></h3><div class="language-"><pre><code>mysql -uroot -proot
-</code></pre></div><blockquote><p>-u:指定数据库用户名</p><p>-p:指定数据库密码，记住-u和登录密码之间没有空格</p></blockquote><h3 id="退出mysql命令行命令" tabindex="-1">退出mysql命令行命令 <a class="header-anchor" href="#退出mysql命令行命令" aria-hidden="true">#</a></h3><p>quit;</p><div class="language-bash"><pre><code><span class="token comment">#示例</span>
-mysql<span class="token operator">&gt;</span>quit<span class="token punctuation">;</span>
-</code></pre></div><p>或者按两次</p><p>mac: command+c</p><p>Windows: ctrl+c</p><h3 id="配置mysql" tabindex="-1">配置mysql <a class="header-anchor" href="#配置mysql" aria-hidden="true">#</a></h3><div class="language-"><pre><code>vim /etc/my.cnf
-</code></pre></div><p><strong>按 i键 可修改模式</strong></p><p><strong>修改内容如下</strong></p><div class="language-bash"><pre><code><span class="token punctuation">[</span>mysql<span class="token punctuation">]</span>
-<span class="token comment"># MySQL设置大小写不敏感:默认:区分表名的大小写，不区分列名的大小写 # 0:大小写敏感 1:大小写不敏感</span>
-<span class="token assign-left variable">lower_case_table_names</span><span class="token operator">=</span><span class="token number">1</span>
-<span class="token comment"># 默认字符集</span>
-character-set-server<span class="token operator">=</span>utf8
-</code></pre></div><p><strong>按esc键退出 修改</strong></p><p><strong>输入 :wq 回车保存</strong></p><h2 id="mysql远程连接授权" tabindex="-1">mysql远程连接授权 <a class="header-anchor" href="#mysql远程连接授权" aria-hidden="true">#</a></h2><p><strong>授权命令</strong></p><div class="language-"><pre><code>grant 权限 on 数据库对象 to 用户
-</code></pre></div><p><strong>示例</strong></p><p>授权root用户对所有数据库对象的全部操作权限：</p><div class="language-"><pre><code>GRANT ALL PRIVILEGES ON *.* TO &#39;root&#39;@&#39;%&#39; IDENTIFIED BY &#39;root&#39; WITH GRANT OPTION;
-</code></pre></div><p>命令说明：</p><ul><li><p>ALL PRIVILEGES：表示授予所有的权限，此处可以指定具体的授权权限</p></li><li><h6 id="：表示所有库中的所有表" tabindex="-1">* <em>.</em> * ：表示所有库中的所有表 <a class="header-anchor" href="#：表示所有库中的所有表" aria-hidden="true">#</a></h6></li><li><p>&#39;root&#39;@&#39;%&#39; ： root是数据库的用户名，%是表示是任意ip地址,可以指定具体ip地址。</p></li><li><p>IDENTIFIED BY &#39;root&#39; ：root是数据库的密码</p></li></ul><div class="language-"><pre><code>FLUSH PRIVILEGES;--刷新权限
-</code></pre></div><h3 id="关闭防火墙" tabindex="-1">关闭防火墙 <a class="header-anchor" href="#关闭防火墙" aria-hidden="true">#</a></h3><div class="language-"><pre><code>systemctl stop firewalld(默认)
-systemctl disable firewalld.service(设置开机不启动)
-</code></pre></div><h3 id="客户端远程访问" tabindex="-1">客户端远程访问 <a class="header-anchor" href="#客户端远程访问" aria-hidden="true">#</a></h3><p>如果你不知道当前虚拟机的ip</p><div class="language-"><pre><code>ip address |sed -rn &#39;/state UP/{n;n;s#^ *inet (.*)/.*$#\1#gp}&#39;
-</code></pre></div><div class="language-"><pre><code>利用navicat可以远程访问MySQL
-</code></pre></div><p><img src="/assets/navcat.a71b1cca.png" alt=""></p><h2 id="ddl语句" tabindex="-1">ddl语句 <a class="header-anchor" href="#ddl语句" aria-hidden="true">#</a></h2><p><strong>数据库操作：database</strong></p><h3 id="创建数据库" tabindex="-1">创建数据库 <a class="header-anchor" href="#创建数据库" aria-hidden="true">#</a></h3><div class="language-"><pre><code>create database 数据库名;
-create database 数据库名 character set 字符集;
-</code></pre></div><h3 id="查看数据库" tabindex="-1">查看数据库 <a class="header-anchor" href="#查看数据库" aria-hidden="true">#</a></h3><p>查看数据库服务器中的所有的数据库；</p><div class="language-"><pre><code>show databases;
-</code></pre></div><p><img src="/assets/showdatabase.f9a9dc13.png" alt=""></p><p>查看某个数据库的定义的信息；</p><div class="language-"><pre><code>show create database 数据库名;
-</code></pre></div><h3 id="删除数据库" tabindex="-1">删除数据库 <a class="header-anchor" href="#删除数据库" aria-hidden="true">#</a></h3><div class="language-"><pre><code>drop database 数据库名;
-</code></pre></div><h3 id="其他数据库操作命令" tabindex="-1">其他数据库操作命令 <a class="header-anchor" href="#其他数据库操作命令" aria-hidden="true">#</a></h3><div class="language-"><pre><code>use 数据库名; #使用xxx数据库
-</code></pre></div><h3 id="查看正在使用的数据库；" tabindex="-1">查看正在使用的数据库； <a class="header-anchor" href="#查看正在使用的数据库；" aria-hidden="true">#</a></h3><div class="language-"><pre><code>select database()
-</code></pre></div><h3 id="表操作：table" tabindex="-1">表操作：table <a class="header-anchor" href="#表操作：table" aria-hidden="true">#</a></h3><h3 id="字段类型" tabindex="-1">字段类型 <a class="header-anchor" href="#字段类型" aria-hidden="true">#</a></h3><ul><li><p>常见的类型：</p><div class="language-"><pre><code>数字类型：int
-
-浮点类型：double
-
-字符型：varchar（可变长字符型）
-
-日期类型：data（只有年月日）；datatime(年月日时分秒)
-
-boolean类型：不支持，一般使用tinyint代替（值为0和1）
-</code></pre></div></li></ul><h3 id="创建表" tabindex="-1">创建表 <a class="header-anchor" href="#创建表" aria-hidden="true">#</a></h3><div class="language-"><pre><code>create table 表名(
-  字段名 类型（长度）约束,
-  字段名 类型（长度）约束
-);
-</code></pre></div><h4 id="单表约束" tabindex="-1">单表约束 <a class="header-anchor" href="#单表约束" aria-hidden="true">#</a></h4><div class="language-"><pre><code>- 主键约束：primary key
-
-- 唯一约束：unique
-
-- 非空约束：not null
-</code></pre></div><p><strong>注意</strong></p><p>主键约束 = 唯一约束+非空约束</p><h3 id="查看表" tabindex="-1">查看表 <a class="header-anchor" href="#查看表" aria-hidden="true">#</a></h3><p>查看数据库中的所有表：</p><div class="language-"><pre><code>show tables;
-</code></pre></div><p>查看表结构</p><div class="language-"><pre><code>desc 表名;
-</code></pre></div><h3 id="删除表" tabindex="-1">删除表 <a class="header-anchor" href="#删除表" aria-hidden="true">#</a></h3><div class="language-"><pre><code>drop table 表名;
-</code></pre></div><h3 id="修改表" tabindex="-1">修改表 <a class="header-anchor" href="#修改表" aria-hidden="true">#</a></h3><div class="language-"><pre><code>alter table 表名 add 列名 类型(长度) 约束;  --修改表添加列
-
-alter table 表名 modify 列名 类型(长度) 约束;  --修改表修改列的类型长度及约束
-
-alter table 表名 change 旧列名 新列名 类型(约束) 约束; --修改表修改列名
-
-alter table 表名 drop 列名;  --修改表删除列
-
-rename table 表名 to 新表名;  --修改表名
-
-alter table 表名 character set 字符集;  --修改表的字符集
-</code></pre></div><h2 id="dml语句" tabindex="-1">DML语句 <a class="header-anchor" href="#dml语句" aria-hidden="true">#</a></h2><h3 id="插入记录：insert" tabindex="-1">插入记录：insert <a class="header-anchor" href="#插入记录：insert" aria-hidden="true">#</a></h3><ul><li><p>语法：</p><div class="language-"><pre><code>insert into 表 (列名1，列名2，列名...) values （值1,值2,值3...）; 向表中插入某些列
-
-
-insert into 表 values (值1,值2,值3...);  向表中插入点所有列
-
-
-insert into 表 (列名1,列名2,列名3...) values select （列名1，列名2,列名3..） from 表
-
-
-insert into 表 values select * from 表
-</code></pre></div></li><li><p>注意：</p><ol><li>列名数与values后面的值的个数相等</li><li>列的顺序与插入的值得顺序一致</li><li>列名的类型与插入的值要一致</li><li>插入值的时候不得超过最大长度</li><li>值如果的字符串或者日期需要加引号&#39;&#39;（一般是单引）</li></ol></li><li><p>例如：</p></li></ul><div class="language-"><pre><code>INSERT INTO sort(sid,sname) VALUES(&#39;s001&#39;, &#39;电器&#39;); 
-
-INSERT INTO sort(sid,sname) VALUES(&#39;s002&#39;, &#39;服饰&#39;);
-
-INSERT INTO sort VALUES(&#39;s003&#39;, &#39;化妆品&#39;);
-
-INSERT INTO sort VALUES(&#39;s004&#39;,&#39;书籍&#39;);
-</code></pre></div><h3 id="更新记录：update" tabindex="-1">更新记录：update <a class="header-anchor" href="#更新记录：update" aria-hidden="true">#</a></h3><ul><li>语法：</li></ul><div class="language-"><pre><code>update 表名 set 字段名=值,字段名=值;
-
-update 表名 set 字段名=值,字段名=值 where 条件;
-</code></pre></div><ul><li>注意 <ol><li>列名的类型与修改的值要一致</li><li>修改值的时候不能超过最大长度</li><li>值如果是字符串或者日期需要加&#39;&#39;</li></ol></li></ul><h3 id="删除记录：delete" tabindex="-1">删除记录：delete <a class="header-anchor" href="#删除记录：delete" aria-hidden="true">#</a></h3><ul><li><p>语法</p><div class="language-"><pre><code>delete from 表名 [where 条件];
-</code></pre></div></li><li><p>面试题</p><div class="language-"><pre><code>删除表中所有记录使用【delete from 表名】，还是用【truncate table 表名】?
-删除方式:
-- delete :一条一条删除，不清空auto_increment记录数。
-- truncate :直接将表删除，重新建表，auto_increment将置为零，从新开始。
-</code></pre></div></li></ul><h2 id="dql语句" tabindex="-1">dql语句 <a class="header-anchor" href="#dql语句" aria-hidden="true">#</a></h2><p><strong>准备工作</strong></p><p>创建数据库</p><div class="language-"><pre><code>create database test;
-</code></pre></div><p>使用test数据库</p><div class="language-"><pre><code>use test;
-</code></pre></div><p>创建商品表：</p><div class="language-"><pre><code>#商品表
-
-CREATE TABLE product (
-  pid int primary key auto_increment, #自增加 auto_increment
-  pname varchar(20),#商品名称
-  price double,#商品价格
-  pdate date,#日期
-  cid int #分类id
-)ENGINE=MyISAM DEFAULT CHARSET=utf8;##设置编码 否则插入数据时一些版本可能会报错
-
-##  Incorrect string value: &#39;\xE6\x89\x8B\xE6\x9C\xBA&#39; for column &#39;pname&#39; at row 1
-
-##这类错误都是编码不一致
-
-#目录表
-
-create table category(
-  id int primary key,
-  cname varchar(100)
-)ENGINE=MyISAM DEFAULT CHARSET=utf8;
-
-
-insert into product values(null,&#39;泰国大榴莲&#39;,98,null,1);
-insert into product values(null,&#39;泰国大枣&#39;,38,null,1);
-insert into product values(null,&#39;新疆切糕&#39;,68,null,2);
-insert into product values(null,&#39;十三香&#39;,10,null,2);
-insert into product values(null,&#39;泰国大枣&#39;,20,null,2);
-insert into product values(null,&#39;泰国大枣&#39;,98,null,20);#没有对应
-insert into product values(null,&#39;iphone手机&#39;,800,null,30);#没有对应
-
-#没有对应是指商品类型没有对应的目录或者商品，不必困惑
-
-insert into category values(1,&#39;国外食品&#39;);
-insert into category values(2,&#39;国内食品&#39;);
-insert into category values(3,&#39;国内服饰&#39;);#没有对应
-</code></pre></div><p>查看表中数据</p><div class="language-"><pre><code>select * from product;
-select * from category;
-</code></pre></div><p><img src="/assets/testTable.ee4e380f.png" alt=""></p><h3 id="完整dql语法顺序" tabindex="-1">完整dql语法顺序 <a class="header-anchor" href="#完整dql语法顺序" aria-hidden="true">#</a></h3><div class="language-"><pre><code>select distinct  
-    &lt; select_list &gt;
-from 
-    &lt; left_table &gt; &lt; join_type&gt;
-join &lt; right_table &gt; on &lt; join_condition &gt;
-where 
-    &lt; where_codition &gt;
-group by
-    &lt; group_by_list &gt;
-having
-    &lt; having_condition &gt;
-order by
-    &lt; order_by_condition &gt;
-limit &lt; limit_number &gt;
-</code></pre></div><ul><li>distinct 去重复 要查的东西</li><li>from 从这个表中</li><li>join 连哪个表</li><li>on 连接条件</li><li>where 过滤条件</li><li>group by 分组</li><li>having 分组条件</li><li>order by 排序</li><li>limit 分页</li></ul><h4 id="简单查询" tabindex="-1">简单查询 <a class="header-anchor" href="#简单查询" aria-hidden="true">#</a></h4><ul><li><p>SQL语法关键字</p><div class="language-"><pre><code>select 
-from
-</code></pre></div></li><li><p>案例</p><ol><li><p>查询所有的商品</p><div class="language-"><pre><code>select * form product;
-*是所有
-product 表
-</code></pre></div></li><li><p>查询商品名和商品价格</p><div class="language-"><pre><code>select pname,price from product;
-</code></pre></div><p><img src="/assets/pname.2796edad.png" alt=""></p></li><li><p>别名查询，使用的<strong>as</strong>关键字,as可以省略</p><p>表别名：</p><div class="language-"><pre><code>select * from product as p;
-</code></pre></div><p>列别名：</p><div class="language-"><pre><code>select pname as pn from product;
-</code></pre></div></li><li><p>去掉重复值</p><div class="language-"><pre><code>select distinct price from product;
-</code></pre></div></li><li><p>查询结果是表达式（运算查询）：将所有商品的价格+10元进行显示</p><div class="language-"><pre><code>select pname,price+10 from product;
-</code></pre></div></li></ol></li></ul><h4 id="条件查询" tabindex="-1">条件查询 <a class="header-anchor" href="#条件查询" aria-hidden="true">#</a></h4><ul><li><p>SQL语法关键词:</p><div class="language-"><pre><code>where
-</code></pre></div></li><li><p>案例：</p><ol><li><p>查询商品名称为十三香的商品所有信息</p><div class="language-"><pre><code>select * from product where pname = &#39;十三香&#39;;
-</code></pre></div><p><img src="/assets/13.6eaa1460.png" alt=""></p></li><li><p>查询商品价格 &gt; 60元的所有商品信息；</p><div class="language-"><pre><code>select * from  product where price &gt; 60;
-</code></pre></div><p><img src="/assets/60.cb1fac84.png" alt=""></p></li></ol></li><li><p>where后的条件写法</p><div class="language-"><pre><code>&gt;,&lt;,=,&gt;=,&lt;=,&lt;&gt;
-
-like 使用占位符 - 和 % _代表一个字符 %代表任意个字符。
-   select * from product where pname like &#39;%新%&#39;;
-in在某个范围中获得值（exists）
-  select * from product where pid in (2,5,8);
-</code></pre></div><p><img src="/assets/operation.2f372e34.png" alt=""></p></li></ul><h4 id="" tabindex="-1"><a class="header-anchor" href="#" aria-hidden="true">#</a></h4><h4 id="排序" tabindex="-1">排序 <a class="header-anchor" href="#排序" aria-hidden="true">#</a></h4><ul><li><p>SQL语法关键字</p><div class="language-"><pre><code>order by
-
-ASC(升序)  DESC(降序)
-</code></pre></div></li><li><p>案例</p><ol><li><p>查询所有的商品，按价格进行排序（asc-升序，desc-降序）</p><div class="language-"><pre><code>select * from product order by price;
-</code></pre></div></li><li><p>查询名称有新的商品的信息并且按价格降序排序</p><div class="language-"><pre><code>select * from product where pname like &#39;%新%&#39; order by price desc;
-</code></pre></div></li></ol></li></ul><h4 id="聚合函数（组函数）" tabindex="-1">聚合函数（组函数） <a class="header-anchor" href="#聚合函数（组函数）" aria-hidden="true">#</a></h4><ul><li><p>特点：只对单列进行操作</p></li><li><p>常用的聚合函数</p><div class="language-"><pre><code>sum():求某一列的和
-avg():求某一列的平均值
-max():求某一列的最大值
-min():求某一列的最小值
-count():求某一列的元素个数
-</code></pre></div></li><li><p>案例：</p><ol><li><p>获得所有商品的价格的总和</p><div class="language-"><pre><code>select sum(price) from product;
-</code></pre></div></li><li><p>获得所有商品的平均价格</p><div class="language-"><pre><code>select avg(price) from product;
-</code></pre></div></li><li><p>获得所有商品的个数</p><div class="language-"><pre><code>select count(*) from product;
-</code></pre></div></li></ol></li></ul><h4 id="分组" tabindex="-1">分组 <a class="header-anchor" href="#分组" aria-hidden="true">#</a></h4><ul><li><p>SQL语法关键字</p><div class="language-"><pre><code>group by
-
-having
-</code></pre></div></li><li><p>案例：</p><ol><li><p>根据cid字段分组，分组后统计商品的个数</p><div class="language-"><pre><code>select cid,count(*) from product group by cid;
-</code></pre></div></li><li><p>根据cid分组，分组统计每组商品的平均价格，并且平均价格&gt;60；</p><div class="language-"><pre><code>select cid,avg(price) from product group by cid having avg(price) &gt; 60;
-</code></pre></div></li></ol></li><li><p>注意事项：</p><ol><li>select语句中的列（非聚合函数列）,必须出现在group by子句中</li><li>group by子句中的列，不一定要出现在select语句中</li><li>聚合函数只能出现select语句中或者having语句中，一定不能出现where语句中</li></ol></li></ul><h4 id="分页查询" tabindex="-1">分页查询 <a class="header-anchor" href="#分页查询" aria-hidden="true">#</a></h4><ul><li><p>关键字：</p><div class="language-"><pre><code>limit [offset,] rows
-</code></pre></div><p><strong>limit关键字不是SQL92标准提出的关键字，它是MySQL独有的语法</strong>。</p><p>通过limit关键字，MySQL实现了物理分页。</p><p>分页分为<strong>逻辑分页</strong>和<strong>物理分页</strong>：</p><div class="language-"><pre><code>逻辑分页：将数据库中的数据查询到内存之后再进行分页。
-
-
-物理分页：通过limit关键字，直接在数据库中进行分页，最终返回的数据是分页后的数据
-</code></pre></div></li><li><p>格式：</p><div class="language-"><pre><code>select * from table limit [offset,] rows;
-</code></pre></div><p>offset：偏移量（跳过多少条）</p><p>rows：每页多少行记录</p></li><li><p>案例</p><div class="language-"><pre><code>分页查询商品表，每页3条记录，查第一页
-select * from product limit 0,3;
-</code></pre></div></li></ul><h3 id="子查询" tabindex="-1">子查询 <a class="header-anchor" href="#子查询" aria-hidden="true">#</a></h3><ul><li><p>定义</p><div class="language-"><pre><code>子查询允许把一个查询嵌套在另一个查询当中。
-
-子查询，又叫内部查询或者嵌套查询，相对于内部查询，包含内部查询的查询语句就称为外部查询。
-
-子查询可以包含普通select可以包括的任意子句，比如：distinct、group by 、order by、limit、join和union等。
-
-但是对应的外部查询必须是以下语句之一：select、insert、update、delete、set和do
-
-使用的操作符: = &gt; &lt; &gt;= &lt;= &lt;&gt; ANY IN SOME ALL EXISTS 
-
-
-</code></pre></div><p>子查询分为如下几类：</p><ol><li><p>标量子查询：返回单一值的标量，最简单的形式。</p><div class="language-"><pre><code>　是指子查询返回的是单一值的标量，如一个数字或一个字符串，也是子查询中最简单的返回形式。 可以使用 = &gt; &lt; &gt;= &lt;= &lt;&gt; 这些操作符对子查询的标量结果进行比较，通常子查询的位置在比较式的右侧
-</code></pre></div><div class="language-"><pre><code>select * from product where price = (select price from product where price=10);
-
-select * from product where price = (select MAX(price) from product);
-
-</code></pre></div><ol start="2"><li><p>列子查询：返回的结果集是 N 行一列。</p><div class="language-"><pre><code>指子查询返回的结果集是 N 行一列，该结果通常来自对表的某个字段查询返回。
-可以使用 = &gt; &lt; &gt;= &lt;= &lt;&gt; 这些操作符对子查询的标量结果进行比较，通常子查询的位置在比较式的右侧。
-可以使用 IN、ANY、SOME 和 ALL 操作符，不能直接使用 = &gt; &lt; &gt;= &lt;= &lt;&gt; 这些比较标量结果的操作符。
-</code></pre></div><div class="language-"><pre><code>SELECT * FROM product WHERE cid IN(SELECT cid FROM product WHERE cid=2);
-
-SELECT cid FROM product WHERE cid &gt; ANY (SELECT id FROM category);
-
-SELECT cid FROM product WHERE cid &gt; ALL (SELECT id FROM category);
-</code></pre></div><ul><li><p>注意：</p><p>NOT IN 是 &lt;&gt; ALL 的别名，二者相同。 特殊情况 　 如果 category 为空表，则 ALL 后的结果为 TRUE； 　 如果子查询返回如 (0,NULL,1) 这种尽管 cid 比返回结果都大，但有空行的结果，则 ALL 后的结果为 UNKNOWN 。</p></li></ul></li><li><p>行子查询：返回的结果集是一行 N 列。</p><div class="language-"><pre><code>指子查询返回的结果集是一行 N 列，该子查询的结果通常是对表的某行数据进行查询而返回的结果集。
-
-</code></pre></div><div class="language-"><pre><code>select * from category where (id,cname) = (select id,cname from category where id=2);
-</code></pre></div></li><li><p>表子查询：返回的结果集是 N 行 N 列。</p><div class="language-"><pre><code>指子查询返回的结果集是 N 行 N 列的一个表数据。
-</code></pre></div><div class="language-"><pre><code> select * from product where (pname,price,pid) in (select pname,price,pid from product);
-</code></pre></div></li></ol></li></ol><p><strong>一个子查询会返回一个标量（就一个值）、一个行、一个列或一个表，这些子查询称之为标量、行、列和表子查询。</strong></p><div class="language-"><pre><code>  如果子查询返回一个标量值（就一个值），那么外部查询就可以使用：=、&gt;、&lt;、&gt;=、&lt;=和&lt;&gt;符号进行比较判断；如果子查询返回的不是一个标量值，而外部查询使用了比较符和子查询的结果进行了比较，那么就会抛出异常。
-</code></pre></div></li><li><p>位置</p><div class="language-"><pre><code>select中、from后、where中。
-
-group by和order by中无实用意义。
-</code></pre></div></li><li><p>注意</p><div class="language-"><pre><code>一般在子查询中，程序先运行在嵌套在最内层的语句，再运行外层。因此在写子查询语句时，可以先测试下内层的子查询语句是否输出了想要的内容，再一层层往外测试，增加子查询正确率。否则多层的嵌套使语句可读性很低。
-</code></pre></div></li></ul><h2 id="理解sql解析顺序" tabindex="-1">理解sql解析顺序 <a class="header-anchor" href="#理解sql解析顺序" aria-hidden="true">#</a></h2><p>接下来再走一步，让我们看看一条SQL语句的前世今生。</p><p>首先看一下示例语句:</p><div class="language-"><pre><code>SELECT DISTINCT
-    &lt; select_list &gt;
-FROM
-    &lt; left_table &gt; &lt; join_type &gt;
-JOIN &lt; right_table &gt; ON &lt; join_condition &gt;
-WHERE
-    &lt; where_condition &gt;
-GROUP BY
-    &lt; group_by_list &gt;
-HAVING
-    &lt; having_condition &gt;
-ORDER BY
-    &lt; order_by_condition &gt;
-LIMIT &lt; limit_number &gt;
-</code></pre></div><p>然而它的执行顺序是这样的:</p><div class="language-"><pre><code>--行过滤
- 1 from &lt;left_table&gt;
- 2 on &lt;join_condition&gt;
- 3 &lt;join_type&gt; join &lt;right_table&gt; 第二部和第三部会循环执行
- 4 where &lt;where_condition&gt; 第四部会循环执行，多个条件的执行顺序是从左往右。
- 5 group by &lt;group_by_list&gt; 
- 6 having &lt;having_condition&gt; 
- --列过滤
- 7 select 分组之后才会执行select
- 8 distinct &lt;select_list&gt;
- --排序
- 9 order by &lt;order_by_condition&gt; 
- --mysql 附加
- 10 limit &lt;limit_number&gt; 
-</code></pre></div><p>虽然自己没想到是这样的，不过一看还是很自然和谐的，从哪里获取，不断的过滤条件，要选择一样或 不一样的，排好序，那才知道要取前几条呢。 既然如此了，那就让我们根据案例一步步来看看其中的细节吧。</p><p><strong>开始sql解析之旅</strong></p><h3 id="from" tabindex="-1">from <a class="header-anchor" href="#from" aria-hidden="true">#</a></h3><p>对from的左边的表和右边的表计算 <strong>笛卡尔积（cross join）</strong>。产生 <strong>虚表VT1</strong></p><div class="language-"><pre><code>mysql&gt; select * from product,category;
-+-----+-----------------+-------+-------+------+----+--------------+
-| pid | pname           | price | pdate | cid  | id | cname        |
-+-----+-----------------+-------+-------+------+----+--------------+
-|   1 | 泰国大榴莲      |    98 | NULL  |    1 |  1 | 国外食品     |
-|   1 | 泰国大榴莲      |    98 | NULL  |    1 |  2 | 国内食品     |
-|   1 | 泰国大榴莲      |    98 | NULL  |    1 |  3 | 国内服饰     |
-|   2 | 泰国大枣        |    38 | NULL  |    1 |  1 | 国外食品     |
-|   2 | 泰国大枣        |    38 | NULL  |    1 |  2 | 国内食品     |
-|   2 | 泰国大枣        |    38 | NULL  |    1 |  3 | 国内服饰     |
-|   3 | 新疆切糕        |    68 | NULL  |    2 |  1 | 国外食品     |
-|   3 | 新疆切糕        |    68 | NULL  |    2 |  2 | 国内食品     |
-|   3 | 新疆切糕        |    68 | NULL  |    2 |  3 | 国内服饰     |
-|   4 | 十三香          |    10 | NULL  |    2 |  1 | 国外食品     |
-|   4 | 十三香          |    10 | NULL  |    2 |  2 | 国内食品     |
-|   4 | 十三香          |    10 | NULL  |    2 |  3 | 国内服饰     |
-|   5 | 泰国大枣        |    20 | NULL  |    2 |  1 | 国外食品     |
-|   5 | 泰国大枣        |    20 | NULL  |    2 |  2 | 国内食品     |
-|   5 | 泰国大枣        |    20 | NULL  |    2 |  3 | 国内服饰     |
-|   6 | 泰国大枣        |    98 | NULL  |   20 |  1 | 国外食品     |
-|   6 | 泰国大枣        |    98 | NULL  |   20 |  2 | 国内食品     |
-|   6 | 泰国大枣        |    98 | NULL  |   20 |  3 | 国内服饰     |
-|   7 | iphone手机      |   800 | NULL  |   30 |  1 | 国外食品     |
-|   7 | iphone手机      |   800 | NULL  |   30 |  2 | 国内食品     |
-|   7 | iphone手机      |   800 | NULL  |   30 |  3 | 国内服饰     |
-+-----+-----------------+-------+-------+------+----+--------------+
-21 rows in set (0.00 sec)
-</code></pre></div><h3 id="on过滤" tabindex="-1">on过滤 <a class="header-anchor" href="#on过滤" aria-hidden="true">#</a></h3><p>对虚表v t1进行on过滤，只有那些符合的行才会被记录在虚表vt2中。</p><p>**注意：**这里因为语法限制，使用了where代替，从中读者也可以感受到两者之间微妙的关系。</p><div class="language-"><pre><code>mysql&gt; select * from product p,category c where p.cid=c.id;
-+-----+-----------------+-------+-------+------+----+--------------+
-| pid | pname           | price | pdate | cid  | id | cname        |
-+-----+-----------------+-------+-------+------+----+--------------+
-|   1 | 泰国大榴莲      |    98 | NULL  |    1 |  1 | 国外食品     |
-|   2 | 泰国大枣        |    38 | NULL  |    1 |  1 | 国外食品     |
-|   3 | 新疆切糕        |    68 | NULL  |    2 |  2 | 国内食品     |
-|   4 | 十三香          |    10 | NULL  |    2 |  2 | 国内食品     |
-|   5 | 泰国大枣        |    20 | NULL  |    2 |  2 | 国内食品     |
-+-----+-----------------+-------+-------+------+----+--------------+
-5 rows in set (0.00 sec)
-</code></pre></div><h3 id="outer-join添加外部列" tabindex="-1">outer join添加外部列 <a class="header-anchor" href="#outer-join添加外部列" aria-hidden="true">#</a></h3><p>如果指定了outer join (比如left join 、right join),那么 <strong>保留表中未匹配的行</strong> 就会作为外部行添加到虚拟表vt2中，产生虚拟表 vt3。</p><p>如果from子句中包含两个以上的表的话，那么就会对上一个join连接产生的结果vt3和下一个表重复执行步骤1～3三个步骤，一直到处理完所有的表为止。</p><div class="language-"><pre><code>mysql&gt; select * from product p left outer join category c on p.cid=c.id;# 以左表 数据为准
-+-----+-----------------+-------+-------+------+------+--------------+
-| pid | pname           | price | pdate | cid  | id   | cname        |
-+-----+-----------------+-------+-------+------+------+--------------+
-|   1 | 泰国大榴莲      |    98 | NULL  |    1 |    1 | 国外食品     |
-|   2 | 泰国大枣        |    38 | NULL  |    1 |    1 | 国外食品     |
-|   3 | 新疆切糕        |    68 | NULL  |    2 |    2 | 国内食品     |
-|   4 | 十三香          |    10 | NULL  |    2 |    2 | 国内食品     |
-|   5 | 泰国大枣        |    20 | NULL  |    2 |    2 | 国内食品     |
-|   6 | 泰国大枣        |    98 | NULL  |   20 | NULL | NULL         |
-|   7 | iphone手机      |   800 | NULL  |   30 | NULL | NULL         |
-+-----+-----------------+-------+-------+------+------+--------------+
-7 rows in set (0.00 sec)
-
-mysql&gt; select * from product p right outer join category c on p.cid=c.id;#以右表 数据为准
-+------+-----------------+-------+-------+------+----+--------------+
-| pid  | pname           | price | pdate | cid  | id | cname        |
-+------+-----------------+-------+-------+------+----+--------------+
-|    1 | 泰国大榴莲      |    98 | NULL  |    1 |  1 | 国外食品     |
-|    2 | 泰国大枣        |    38 | NULL  |    1 |  1 | 国外食品     |
-|    3 | 新疆切糕        |    68 | NULL  |    2 |  2 | 国内食品     |
-|    4 | 十三香          |    10 | NULL  |    2 |  2 | 国内食品     |
-|    5 | 泰国大枣        |    20 | NULL  |    2 |  2 | 国内食品     |
-| NULL | NULL            |  NULL | NULL  | NULL |  3 | 国内服饰     |
-+------+-----------------+-------+-------+------+----+--------------+
-6 rows in set (0.00 sec)
-
-</code></pre></div><h3 id="where" tabindex="-1">where <a class="header-anchor" href="#where" aria-hidden="true">#</a></h3><p>对虚拟表 vt3 进行where 条件过滤，只有符合的记录才会被插入到虚拟表vt4中。</p><p><strong>注意：</strong></p><p>此时因为分组，不能使用聚合运算；也不能使用select中创建的别名;</p><p><strong>与on的区别：</strong></p><ul><li>如果有外部列，on针对过滤的是关键表，主表（保留表）会返回所有列；</li><li>如果没有添加外部列，两者的效果是一样的；</li></ul><p><strong>应用：</strong></p><ul><li><p>对主表的过滤应该放在where;</p></li><li><p>对与关联表，先条件查询后连接则用on，先连接后条件查询则用where;</p><div class="language-"><pre><code>mysql&gt; select * from product p left outer join category c on p.cid=c.id where p.pname=&#39;泰国大枣&#39;;
-+-----+--------------+-------+-------+------+------+--------------+
-| pid | pname        | price | pdate | cid  | id   | cname        |
-+-----+--------------+-------+-------+------+------+--------------+
-|   2 | 泰国大枣     |    38 | NULL  |    1 |    1 | 国外食品     |
-|   5 | 泰国大枣     |    20 | NULL  |    2 |    2 | 国内食品     |
-|   6 | 泰国大枣     |    98 | NULL  |   20 | NULL | NULL         |
-+-----+--------------+-------+-------+------+------+--------------+
-3 rows in set (0.00 sec)
-
-</code></pre></div></li></ul><h2 id="理解多表间关联" tabindex="-1">理解多表间关联 <a class="header-anchor" href="#理解多表间关联" aria-hidden="true">#</a></h2><h2 id="掌握多表关联查询及子查询" tabindex="-1">掌握多表关联查询及子查询 <a class="header-anchor" href="#掌握多表关联查询及子查询" aria-hidden="true">#</a></h2></div></div></div><div class="footer" data-v-76de30a3><div class="edit-link" data-v-76de30a3 data-v-3c031474><a class="link" href="https://github.com/hu5871/hu5871.github.io" target="_blank" rel="noopener noreferrer" data-v-3c031474>为此页提供修改建议 <svg class="icon outbound icon" xmlns="http://www.w3.org/2000/svg" aria-hidden="true" x="0px" y="0px" viewbox="0 0 100 100" width="15" height="15" data-v-3c031474><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path><polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg></a></div></div><!----></div></div></div></div>
-    <script>__VP_HASH_MAP__ = JSON.parse("{\"readme.md\":\"fa571d24\",\"index.md\":\"3e9527f5\",\"pages_engineering_index.md\":\"7f818855\",\"pages_js_algorithm.md\":\"eeef05cc\",\"pages_js_cssandhtml.md\":\"db234e54\",\"pages_js_datastructure.md\":\"b35141e2\",\"pages_js_git.md\":\"7fbcfca3\",\"pages_js_http.md\":\"f2c9c440\",\"pages_js_javascriptad.md\":\"ae71f48c\",\"pages_js_js.md\":\"e1e0c6d3\",\"pages_js_vue.md\":\"b2ec4ea3\",\"pages_js_wx.md\":\"59e52c95\",\"pages_mysql_mysql.md\":\"045fa5b9\",\"pages_uselibrary_index.md\":\"caf69624\",\"pages_utils_index.md\":\"ace2182e\",\"pages_vue_diff.md\":\"137d1b3f\",\"pages_vue_reactivity.md\":\"23f879f9\"}")</script>
-    <script type="module" async src="/assets/app.9fda2e54.js"></script>
+    <div id="app"><div class="theme"><header class="nav-bar" data-v-2a5924c9><div class="showSide" data-v-2a5924c9><span role="img" aria-label="menu" class="anticon anticon-menu" data-v-2a5924c9><svg focusable="false" class="" style="" data-icon="menu" width="1em" height="1em" fill="currentColor" aria-hidden="true" viewbox="64 64 896 896"><path d="M904 160H120c-4.4 0-8 3.6-8 8v64c0 4.4 3.6 8 8 8h784c4.4 0 8-3.6 8-8v-64c0-4.4-3.6-8-8-8zm0 624H120c-4.4 0-8 3.6-8 8v64c0 4.4 3.6 8 8 8h784c4.4 0 8-3.6 8-8v-64c0-4.4-3.6-8-8-8zm0-312H120c-4.4 0-8 3.6-8 8v64c0 4.4 3.6 8 8 8h784c4.4 0 8-3.6 8-8v-64c0-4.4-3.6-8-8-8z"></path></svg></span></div><div data-v-2a5924c9><span data-v-2a5924c9>前端博客</span></div><div class="flex-grow" data-v-2a5924c9></div><!--[--><div class="nav-link" data-v-9c461d30><!--[--><!--[--><div class="item" data-v-9c461d30><div class="nav-dropdown-link navDrop" data-v-9c461d30 data-v-6ecf7aae><button class="button" data-v-6ecf7aae><span class="button-text" data-v-6ecf7aae>源码</span><span class="button-arrow" data-v-6ecf7aae></span></button><ul class="dialog" data-v-6ecf7aae><!--[--><li class="dialog-item" data-v-6ecf7aae><div class="nav-dropdown-link-item" data-v-6ecf7aae><a class="item" href="/pages/vue/reactivity" data-v-6ecf7aae><span class="arrow" data-v-6ecf7aae></span><span class="text" data-v-6ecf7aae>vue3源码</span><span class="icon" data-v-6ecf7aae><svg class="icon outbound" xmlns="http://www.w3.org/2000/svg" aria-hidden="true" x="0px" y="0px" viewbox="0 0 100 100" width="15" height="15" data-v-6ecf7aae><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path><polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg></span></a></div></li><!--]--></ul></div></div><!--]--><!--[--><div class="item" data-v-9c461d30><div class="nav-dropdown-link navDrop" data-v-9c461d30 data-v-6ecf7aae><button class="button" data-v-6ecf7aae><span class="button-text" data-v-6ecf7aae>面试题</span><span class="button-arrow" data-v-6ecf7aae></span></button><ul class="dialog" data-v-6ecf7aae><!--[--><li class="dialog-item" data-v-6ecf7aae><div class="nav-dropdown-link-item" data-v-6ecf7aae><a class="item" href="/pages/js/js" data-v-6ecf7aae><span class="arrow" data-v-6ecf7aae></span><span class="text" data-v-6ecf7aae>面试题</span><span class="icon" data-v-6ecf7aae><svg class="icon outbound" xmlns="http://www.w3.org/2000/svg" aria-hidden="true" x="0px" y="0px" viewbox="0 0 100 100" width="15" height="15" data-v-6ecf7aae><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path><polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg></span></a></div></li><!--]--></ul></div></div><!--]--><!--[--><div class="item" data-v-9c461d30><div class="nav-dropdown-link navDrop" data-v-9c461d30 data-v-6ecf7aae><button class="button" data-v-6ecf7aae><span class="button-text" data-v-6ecf7aae>TS</span><span class="button-arrow" data-v-6ecf7aae></span></button><ul class="dialog" data-v-6ecf7aae><!--[--><li class="dialog-item" data-v-6ecf7aae><div class="nav-dropdown-link-item" data-v-6ecf7aae><a class="item" href="/pages/ts/index" data-v-6ecf7aae><span class="arrow" data-v-6ecf7aae></span><span class="text" data-v-6ecf7aae>typeScript</span><span class="icon" data-v-6ecf7aae><svg class="icon outbound" xmlns="http://www.w3.org/2000/svg" aria-hidden="true" x="0px" y="0px" viewbox="0 0 100 100" width="15" height="15" data-v-6ecf7aae><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path><polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg></span></a></div></li><!--]--></ul></div></div><!--]--><!--[--><div class="item" data-v-9c461d30><div class="nav-dropdown-link navDrop" data-v-9c461d30 data-v-6ecf7aae><button class="button" data-v-6ecf7aae><span class="button-text" data-v-6ecf7aae>数据库</span><span class="button-arrow" data-v-6ecf7aae></span></button><ul class="dialog" data-v-6ecf7aae><!--[--><li class="dialog-item" data-v-6ecf7aae><div class="nav-dropdown-link-item" data-v-6ecf7aae><a class="item" href="/pages/mysql/mysql" data-v-6ecf7aae><span class="arrow" data-v-6ecf7aae></span><span class="text" data-v-6ecf7aae>mysql</span><span class="icon" data-v-6ecf7aae><svg class="icon outbound" xmlns="http://www.w3.org/2000/svg" aria-hidden="true" x="0px" y="0px" viewbox="0 0 100 100" width="15" height="15" data-v-6ecf7aae><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path><polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg></span></a></div></li><!--]--></ul></div></div><!--]--><!--[--><div class="item" data-v-9c461d30><div class="nav-dropdown-link navDrop" data-v-9c461d30 data-v-6ecf7aae><button class="button" data-v-6ecf7aae><span class="button-text" data-v-6ecf7aae>实用的库</span><span class="button-arrow" data-v-6ecf7aae></span></button><ul class="dialog" data-v-6ecf7aae><!--[--><li class="dialog-item" data-v-6ecf7aae><div class="nav-dropdown-link-item" data-v-6ecf7aae><a class="item" href="/pages/useLibrary/index" data-v-6ecf7aae><span class="arrow" data-v-6ecf7aae></span><span class="text" data-v-6ecf7aae>实用的库</span><span class="icon" data-v-6ecf7aae><svg class="icon outbound" xmlns="http://www.w3.org/2000/svg" aria-hidden="true" x="0px" y="0px" viewbox="0 0 100 100" width="15" height="15" data-v-6ecf7aae><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path><polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg></span></a></div></li><!--]--></ul></div></div><!--]--><!--[--><div class="item" data-v-9c461d30><div class="nav-dropdown-link navDrop" data-v-9c461d30 data-v-6ecf7aae><button class="button" data-v-6ecf7aae><span class="button-text" data-v-6ecf7aae>数据结构与算法</span><span class="button-arrow" data-v-6ecf7aae></span></button><ul class="dialog" data-v-6ecf7aae><!--[--><li class="dialog-item" data-v-6ecf7aae><div class="nav-dropdown-link-item" data-v-6ecf7aae><a class="item" href="/pages/DSAA/dataStructure" data-v-6ecf7aae><span class="arrow" data-v-6ecf7aae></span><span class="text" data-v-6ecf7aae>数据结构</span><span class="icon" data-v-6ecf7aae><svg class="icon outbound" xmlns="http://www.w3.org/2000/svg" aria-hidden="true" x="0px" y="0px" viewbox="0 0 100 100" width="15" height="15" data-v-6ecf7aae><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path><polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg></span></a></div></li><li class="dialog-item" data-v-6ecf7aae><div class="nav-dropdown-link-item" data-v-6ecf7aae><a class="item" href="/pages/DSAA/algorithm" data-v-6ecf7aae><span class="arrow" data-v-6ecf7aae></span><span class="text" data-v-6ecf7aae>算法</span><span class="icon" data-v-6ecf7aae><svg class="icon outbound" xmlns="http://www.w3.org/2000/svg" aria-hidden="true" x="0px" y="0px" viewbox="0 0 100 100" width="15" height="15" data-v-6ecf7aae><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path><polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg></span></a></div></li><!--]--></ul></div></div><!--]--><!--[--><div class="item" data-v-9c461d30><div class="nav-dropdown-link navDrop" data-v-9c461d30 data-v-6ecf7aae><button class="button" data-v-6ecf7aae><span class="button-text" data-v-6ecf7aae>设计模式</span><span class="button-arrow" data-v-6ecf7aae></span></button><ul class="dialog" data-v-6ecf7aae><!--[--><li class="dialog-item" data-v-6ecf7aae><div class="nav-dropdown-link-item" data-v-6ecf7aae><a class="item" href="/pages/designPattern/index" data-v-6ecf7aae><span class="arrow" data-v-6ecf7aae></span><span class="text" data-v-6ecf7aae>设计模式</span><span class="icon" data-v-6ecf7aae><svg class="icon outbound" xmlns="http://www.w3.org/2000/svg" aria-hidden="true" x="0px" y="0px" viewbox="0 0 100 100" width="15" height="15" data-v-6ecf7aae><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path><polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg></span></a></div></li><!--]--></ul></div></div><!--]--><!--[--><div class="item" data-v-9c461d30><div class="nav-dropdown-link navDrop" data-v-9c461d30 data-v-6ecf7aae><button class="button" data-v-6ecf7aae><span class="button-text" data-v-6ecf7aae>容器与集成部署</span><span class="button-arrow" data-v-6ecf7aae></span></button><ul class="dialog" data-v-6ecf7aae><!--[--><li class="dialog-item" data-v-6ecf7aae><div class="nav-dropdown-link-item" data-v-6ecf7aae><a class="item" href="/pages/containerAndIntegration/docker" data-v-6ecf7aae><span class="arrow" data-v-6ecf7aae></span><span class="text" data-v-6ecf7aae>docker</span><span class="icon" data-v-6ecf7aae><svg class="icon outbound" xmlns="http://www.w3.org/2000/svg" aria-hidden="true" x="0px" y="0px" viewbox="0 0 100 100" width="15" height="15" data-v-6ecf7aae><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path><polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg></span></a></div></li><li class="dialog-item" data-v-6ecf7aae><div class="nav-dropdown-link-item" data-v-6ecf7aae><a class="item" href="/pages/containerAndIntegration/jenkins" data-v-6ecf7aae><span class="arrow" data-v-6ecf7aae></span><span class="text" data-v-6ecf7aae>jenkins</span><span class="icon" data-v-6ecf7aae><svg class="icon outbound" xmlns="http://www.w3.org/2000/svg" aria-hidden="true" x="0px" y="0px" viewbox="0 0 100 100" width="15" height="15" data-v-6ecf7aae><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path><polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg></span></a></div></li><!--]--></ul></div></div><!--]--><!--[--><div class="item" data-v-9c461d30><div class="nav-dropdown-link navDrop" data-v-9c461d30 data-v-6ecf7aae><button class="button" data-v-6ecf7aae><span class="button-text" data-v-6ecf7aae>ide</span><span class="button-arrow" data-v-6ecf7aae></span></button><ul class="dialog" data-v-6ecf7aae><!--[--><li class="dialog-item" data-v-6ecf7aae><div class="nav-dropdown-link-item" data-v-6ecf7aae><a class="item" href="/pages/ide/index" data-v-6ecf7aae><span class="arrow" data-v-6ecf7aae></span><span class="text" data-v-6ecf7aae>vscode</span><span class="icon" data-v-6ecf7aae><svg class="icon outbound" xmlns="http://www.w3.org/2000/svg" aria-hidden="true" x="0px" y="0px" viewbox="0 0 100 100" width="15" height="15" data-v-6ecf7aae><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path><polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg></span></a></div></li><!--]--></ul></div></div><!--]--><!--[--><div class="item" data-v-9c461d30><div class="nav-dropdown-link navDrop" data-v-9c461d30 data-v-6ecf7aae><button class="button" data-v-6ecf7aae><span class="button-text" data-v-6ecf7aae>其他工具</span><span class="button-arrow" data-v-6ecf7aae></span></button><ul class="dialog" data-v-6ecf7aae><!--[--><li class="dialog-item" data-v-6ecf7aae><div class="nav-dropdown-link-item" data-v-6ecf7aae><a class="item" href="/pages/utils/index" data-v-6ecf7aae><span class="arrow" data-v-6ecf7aae></span><span class="text" data-v-6ecf7aae>其他工具</span><span class="icon" data-v-6ecf7aae><svg class="icon outbound" xmlns="http://www.w3.org/2000/svg" aria-hidden="true" x="0px" y="0px" viewbox="0 0 100 100" width="15" height="15" data-v-6ecf7aae><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path><polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg></span></a></div></li><!--]--></ul></div></div><!--]--><!--]--><button class="nav-btn" aria-label="Toggle Theme" data-v-9c461d30><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" role="img" width="1em" height="1em" preserveaspectratio="xMidYMid meet" viewbox="0 0 24 24" data-v-9c461d30><path fill="currentColor" d="M12 18a6 6 0 1 1 0-12a6 6 0 0 1 0 12zm0-2a4 4 0 1 0 0-8a4 4 0 0 0 0 8zM11 1h2v3h-2V1zm0 19h2v3h-2v-3zM3.515 4.929l1.414-1.414L7.05 5.636L5.636 7.05L3.515 4.93zM16.95 18.364l1.414-1.414l2.121 2.121l-1.414 1.414l-2.121-2.121zm2.121-14.85l1.414 1.415l-2.121 2.121l-1.414-1.414l2.121-2.121zM5.636 16.95l1.414 1.414l-2.121 2.121l-1.414-1.414l2.121-2.121zM23 11v2h-3v-2h3zM4 11v2H1v-2h3z"></path></svg><span class="iconify" data-icon="ri:sun-line" data-v-9c461d30></span></button></div><div class="nav-mini" data-v-9c461d30><button class="nav-btn" aria-label="Toggle Theme" data-v-9c461d30><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" role="img" width="1em" height="1em" preserveaspectratio="xMidYMid meet" viewbox="0 0 24 24" data-v-9c461d30><path fill="currentColor" d="M12 18a6 6 0 1 1 0-12a6 6 0 0 1 0 12zm0-2a4 4 0 1 0 0-8a4 4 0 0 0 0 8zM11 1h2v3h-2V1zm0 19h2v3h-2v-3zM3.515 4.929l1.414-1.414L7.05 5.636L5.636 7.05L3.515 4.93zM16.95 18.364l1.414-1.414l2.121 2.121l-1.414 1.414l-2.121-2.121zm2.121-14.85l1.414 1.415l-2.121 2.121l-1.414-1.414l2.121-2.121zM5.636 16.95l1.414 1.414l-2.121 2.121l-1.414-1.414l2.121-2.121zM23 11v2h-3v-2h3zM4 11v2H1v-2h3z"></path></svg><span class="iconify" data-icon="ri:sun-line" data-v-9c461d30></span></button></div><!--]--></header><!----><aside class="sidebar" data-v-8e164692><nav class="nav-links nav" data-v-8e164692 data-v-c1117b78><!--[--><div data-v-c1117b78><div class="nav-dropdown-link" data-v-c1117b78 data-v-10889c82><button class="button" data-v-10889c82><span class="button-text" data-v-10889c82>源码</span><span class="right button-arrow" data-v-10889c82></span></button><ul class="dialog" data-v-10889c82><!--[--><li class="dialog-item" data-v-10889c82><div class="nav-dropdown-link-item" data-v-10889c82><a class="item" href="/pages/vue/reactivity" data-v-10889c82><span class="arrow" data-v-10889c82></span><span class="text" data-v-10889c82>vue3源码</span></a></div></li><!--]--></ul></div></div><div data-v-c1117b78><div class="nav-dropdown-link" data-v-c1117b78 data-v-10889c82><button class="button" data-v-10889c82><span class="button-text" data-v-10889c82>面试题</span><span class="right button-arrow" data-v-10889c82></span></button><ul class="dialog" data-v-10889c82><!--[--><li class="dialog-item" data-v-10889c82><div class="nav-dropdown-link-item" data-v-10889c82><a class="item" href="/pages/js/js" data-v-10889c82><span class="arrow" data-v-10889c82></span><span class="text" data-v-10889c82>面试题</span></a></div></li><!--]--></ul></div></div><div data-v-c1117b78><div class="nav-dropdown-link" data-v-c1117b78 data-v-10889c82><button class="button" data-v-10889c82><span class="button-text" data-v-10889c82>TS</span><span class="right button-arrow" data-v-10889c82></span></button><ul class="dialog" data-v-10889c82><!--[--><li class="dialog-item" data-v-10889c82><div class="nav-dropdown-link-item" data-v-10889c82><a class="item" href="/pages/ts/index" data-v-10889c82><span class="arrow" data-v-10889c82></span><span class="text" data-v-10889c82>typeScript</span></a></div></li><!--]--></ul></div></div><div data-v-c1117b78><div class="nav-dropdown-link" data-v-c1117b78 data-v-10889c82><button class="button" data-v-10889c82><span class="button-text" data-v-10889c82>数据库</span><span class="right button-arrow" data-v-10889c82></span></button><ul class="dialog" data-v-10889c82><!--[--><li class="dialog-item" data-v-10889c82><div class="nav-dropdown-link-item" data-v-10889c82><a class="item" href="/pages/mysql/mysql" data-v-10889c82><span class="arrow" data-v-10889c82></span><span class="text" data-v-10889c82>mysql</span></a></div></li><!--]--></ul></div></div><div data-v-c1117b78><div class="nav-dropdown-link" data-v-c1117b78 data-v-10889c82><button class="button" data-v-10889c82><span class="button-text" data-v-10889c82>实用的库</span><span class="right button-arrow" data-v-10889c82></span></button><ul class="dialog" data-v-10889c82><!--[--><li class="dialog-item" data-v-10889c82><div class="nav-dropdown-link-item" data-v-10889c82><a class="item" href="/pages/useLibrary/index" data-v-10889c82><span class="arrow" data-v-10889c82></span><span class="text" data-v-10889c82>实用的库</span></a></div></li><!--]--></ul></div></div><div data-v-c1117b78><div class="nav-dropdown-link" data-v-c1117b78 data-v-10889c82><button class="button" data-v-10889c82><span class="button-text" data-v-10889c82>数据结构与算法</span><span class="right button-arrow" data-v-10889c82></span></button><ul class="dialog" data-v-10889c82><!--[--><li class="dialog-item" data-v-10889c82><div class="nav-dropdown-link-item" data-v-10889c82><a class="item" href="/pages/DSAA/dataStructure" data-v-10889c82><span class="arrow" data-v-10889c82></span><span class="text" data-v-10889c82>数据结构</span></a></div></li><li class="dialog-item" data-v-10889c82><div class="nav-dropdown-link-item" data-v-10889c82><a class="item" href="/pages/DSAA/algorithm" data-v-10889c82><span class="arrow" data-v-10889c82></span><span class="text" data-v-10889c82>算法</span></a></div></li><!--]--></ul></div></div><div data-v-c1117b78><div class="nav-dropdown-link" data-v-c1117b78 data-v-10889c82><button class="button" data-v-10889c82><span class="button-text" data-v-10889c82>设计模式</span><span class="right button-arrow" data-v-10889c82></span></button><ul class="dialog" data-v-10889c82><!--[--><li class="dialog-item" data-v-10889c82><div class="nav-dropdown-link-item" data-v-10889c82><a class="item" href="/pages/designPattern/index" data-v-10889c82><span class="arrow" data-v-10889c82></span><span class="text" data-v-10889c82>设计模式</span></a></div></li><!--]--></ul></div></div><div data-v-c1117b78><div class="nav-dropdown-link" data-v-c1117b78 data-v-10889c82><button class="button" data-v-10889c82><span class="button-text" data-v-10889c82>容器与集成部署</span><span class="right button-arrow" data-v-10889c82></span></button><ul class="dialog" data-v-10889c82><!--[--><li class="dialog-item" data-v-10889c82><div class="nav-dropdown-link-item" data-v-10889c82><a class="item" href="/pages/containerAndIntegration/docker" data-v-10889c82><span class="arrow" data-v-10889c82></span><span class="text" data-v-10889c82>docker</span></a></div></li><li class="dialog-item" data-v-10889c82><div class="nav-dropdown-link-item" data-v-10889c82><a class="item" href="/pages/containerAndIntegration/jenkins" data-v-10889c82><span class="arrow" data-v-10889c82></span><span class="text" data-v-10889c82>jenkins</span></a></div></li><!--]--></ul></div></div><div data-v-c1117b78><div class="nav-dropdown-link" data-v-c1117b78 data-v-10889c82><button class="button" data-v-10889c82><span class="button-text" data-v-10889c82>ide</span><span class="right button-arrow" data-v-10889c82></span></button><ul class="dialog" data-v-10889c82><!--[--><li class="dialog-item" data-v-10889c82><div class="nav-dropdown-link-item" data-v-10889c82><a class="item" href="/pages/ide/index" data-v-10889c82><span class="arrow" data-v-10889c82></span><span class="text" data-v-10889c82>vscode</span></a></div></li><!--]--></ul></div></div><div data-v-c1117b78><div class="nav-dropdown-link" data-v-c1117b78 data-v-10889c82><button class="button" data-v-10889c82><span class="button-text" data-v-10889c82>其他工具</span><span class="right button-arrow" data-v-10889c82></span></button><ul class="dialog" data-v-10889c82><!--[--><li class="dialog-item" data-v-10889c82><div class="nav-dropdown-link-item" data-v-10889c82><a class="item" href="/pages/utils/index" data-v-10889c82><span class="arrow" data-v-10889c82></span><span class="text" data-v-10889c82>其他工具</span></a></div></li><!--]--></ul></div></div><!--]--></nav><ul class="sidebar-links" data-v-8e164692><!--[--><li class="sidebar-link" data-v-8e164692><p class="sidebar-link-item">MySQL</p><ul class="sidebar-links"><!--[--><li class="sidebar-link"><a class="active sidebar-link-item" href="/pages/mysql/mysql">mysql</a><ul class="sidebar-links"><!--[--><li class="sidebar-link"><a class="sidebar-link-item" href="#理解关系型数据库的概念">理解关系型数据库的概念</a><ul class="sidebar-links"><!--[--><li class="sidebar-link"><a class="sidebar-link-item" href="#数据库概述">数据库概述</a><!----></li><!--]--></ul></li><li class="sidebar-link"><a class="sidebar-link-item" href="#了解mysql历史">了解mysql历史</a><ul class="sidebar-links"><!--[--><!--]--></ul></li><li class="sidebar-link"><a class="sidebar-link-item" href="#掌握mysql在linux下的安装和远程连接">掌握mysql在linux下的安装和远程连接</a><ul class="sidebar-links"><!--[--><li class="sidebar-link"><a class="sidebar-link-item" href="#mysql基础">mysql基础</a><!----></li><li class="sidebar-link"><a class="sidebar-link-item" href="#安装mysql">安装mysql</a><!----></li><li class="sidebar-link"><a class="sidebar-link-item" href="#启动服务">启动服务</a><!----></li><li class="sidebar-link"><a class="sidebar-link-item" href="#重启服务">重启服务</a><!----></li><li class="sidebar-link"><a class="sidebar-link-item" href="#mysql的卸载">mysql的卸载</a><!----></li><li class="sidebar-link"><a class="sidebar-link-item" href="#登录mysql">登录mysql</a><!----></li><li class="sidebar-link"><a class="sidebar-link-item" href="#退出mysql命令行命令">退出mysql命令行命令</a><!----></li><li class="sidebar-link"><a class="sidebar-link-item" href="#配置mysql">配置mysql</a><!----></li><!--]--></ul></li><li class="sidebar-link"><a class="sidebar-link-item" href="#mysql远程连接授权">mysql远程连接授权</a><ul class="sidebar-links"><!--[--><li class="sidebar-link"><a class="sidebar-link-item" href="#关闭防火墙">关闭防火墙</a><!----></li><li class="sidebar-link"><a class="sidebar-link-item" href="#客户端远程访问">客户端远程访问</a><!----></li><!--]--></ul></li><li class="sidebar-link"><a class="sidebar-link-item" href="#ddl语句">ddl语句</a><ul class="sidebar-links"><!--[--><li class="sidebar-link"><a class="sidebar-link-item" href="#创建数据库">创建数据库</a><!----></li><li class="sidebar-link"><a class="sidebar-link-item" href="#查看数据库">查看数据库</a><!----></li><li class="sidebar-link"><a class="sidebar-link-item" href="#删除数据库">删除数据库</a><!----></li><li class="sidebar-link"><a class="sidebar-link-item" href="#其他数据库操作命令">其他数据库操作命令</a><!----></li><li class="sidebar-link"><a class="sidebar-link-item" href="#查看正在使用的数据库；">查看正在使用的数据库；</a><!----></li><li class="sidebar-link"><a class="sidebar-link-item" href="#表操作：table">表操作：table</a><!----></li><li class="sidebar-link"><a class="sidebar-link-item" href="#字段类型">字段类型</a><!----></li><li class="sidebar-link"><a class="sidebar-link-item" href="#创建表">创建表</a><!----></li><li class="sidebar-link"><a class="sidebar-link-item" href="#查看表">查看表</a><!----></li><li class="sidebar-link"><a class="sidebar-link-item" href="#删除表">删除表</a><!----></li><li class="sidebar-link"><a class="sidebar-link-item" href="#修改表">修改表</a><!----></li><!--]--></ul></li><li class="sidebar-link"><a class="sidebar-link-item" href="#dml语句">DML语句</a><ul class="sidebar-links"><!--[--><li class="sidebar-link"><a class="sidebar-link-item" href="#插入记录：insert">插入记录：insert</a><!----></li><li class="sidebar-link"><a class="sidebar-link-item" href="#更新记录：update">更新记录：update</a><!----></li><li class="sidebar-link"><a class="sidebar-link-item" href="#删除记录：delete">删除记录：delete</a><!----></li><!--]--></ul></li><li class="sidebar-link"><a class="sidebar-link-item" href="#dql语句">dql语句</a><ul class="sidebar-links"><!--[--><li class="sidebar-link"><a class="sidebar-link-item" href="#完整dql语法顺序">完整dql语法顺序</a><!----></li><li class="sidebar-link"><a class="sidebar-link-item" href="#子查询">子查询</a><!----></li><!--]--></ul></li><li class="sidebar-link"><a class="sidebar-link-item" href="#理解sql解析顺序">理解sql解析顺序</a><ul class="sidebar-links"><!--[--><li class="sidebar-link"><a class="sidebar-link-item" href="#from">from</a><!----></li><li class="sidebar-link"><a class="sidebar-link-item" href="#on过滤">on过滤</a><!----></li><li class="sidebar-link"><a class="sidebar-link-item" href="#outer join添加外部列">outer join添加外部列</a><!----></li><li class="sidebar-link"><a class="sidebar-link-item" href="#where">where</a><!----></li><!--]--></ul></li><li class="sidebar-link"><a class="sidebar-link-item" href="#理解多表间关联">理解多表间关联</a><ul class="sidebar-links"><!--[--><!--]--></ul></li><li class="sidebar-link"><a class="sidebar-link-item" href="#掌握多表关联查询及子查询">掌握多表关联查询及子查询</a><ul class="sidebar-links"><!--[--><!--]--></ul></li><!--]--></ul></li><!--]--></ul></li><!--]--></ul></aside><div class="sidebar-mask"></div><div class="page" data-v-76de30a3><div class="container" data-v-76de30a3><div class="content" data-v-76de30a3><div style="position:relative;" data-v-76de30a3><div><h1 id="从零到1掌握mysql" tabindex="-1">从零到1掌握mySQL <a class="header-anchor" href="#从零到1掌握mysql" aria-hidden="true">#</a></h1><h2 id="理解关系型数据库的概念" tabindex="-1">理解关系型数据库的概念 <a class="header-anchor" href="#理解关系型数据库的概念" aria-hidden="true">#</a></h2><blockquote><p>如果你对这些不感兴趣，可以跳过</p></blockquote><h3 id="数据库概述" tabindex="-1">数据库概述 <a class="header-anchor" href="#数据库概述" aria-hidden="true">#</a></h3><h4 id="什么是数据库" tabindex="-1">什么是数据库 <a class="header-anchor" href="#什么是数据库" aria-hidden="true">#</a></h4><blockquote><p>数据库就是储存数据的仓库，其本质就是一个[文件系统]，数据按照特定的格式储存起来，用户可以通过SQL对数据库中的数据进行增加、删除、修改、查询操作</p></blockquote><h4 id="什么是关系型数据库" tabindex="-1">什么是关系型数据库 <a class="header-anchor" href="#什么是关系型数据库" aria-hidden="true">#</a></h4><blockquote><p>数据库中的记录是有行有列的就是关系型数据库，与之相反的就是NoSQL数据库</p></blockquote><h4 id="数据库和表" tabindex="-1">数据库和表 <a class="header-anchor" href="#数据库和表" aria-hidden="true">#</a></h4><p><img src="/assets/mysql.659dd8d9.png" alt="mysql"></p><blockquote><p>数据库管理系统：指一种[操作和管理数据库]的大型软件，用于建立、使用和维护数据库，对数据库进行统一管理和控制，以保证数据库的安全性和完整性。用户通过数据库管理系统访问数据库中表内的数据</p></blockquote><h2 id="了解mysql历史" tabindex="-1">了解mysql历史 <a class="header-anchor" href="#了解mysql历史" aria-hidden="true">#</a></h2><blockquote><p>- MySQL的历史可以追溯到1979年，一个名为Monty Widenius的程序员在为TcX的小公司打工，并且用 BASIC设计了一个报表工具，使其可以在4MHz主频和16KB内存的计算机上运行。当时，这只是一个很底层的 且仅面向报表的存储引擎，名叫Unireg。</p><p>- 1990年，TcX公司的客户中开始有人要求为他的API提供SQL支持。Monty直接借助于mSQL的代码，将 它集成到自己的存储引擎中。令人失望的是，效果并不太令人满意，决心自己重写一个SQL支持。</p><p>- 1996年，MySQL 1.0发布，它只面向一小拨人，相当于内部发布</p><p>1990年，TcX公司的客户中开始有人要求为他的API提供SQL支持。Monty直接借助于mSQL的代码，将 它集成到自己的存储引擎中。令人失望的是，效果并不太令人满意，决心自己重写一个SQL支持。</p><p>- 1996年，MySQL 1.0发布，它只面向一小拨人，相当于内部发布。</p><p>- 到了1996年10月，MySQL 3.11.1发布(MySQL没有2.x版本)，最开始只提供Solaris下的二进制版 本。一个月后，Linux版本出现了。在接下来的两年里，MySQL被依次移植到各个平台。</p><p>- 【1999~2000年】，【MySQL AB】公司在瑞典成立。Monty雇了几个人与Sleepycat合作，开发出 了【Berkeley DB引擎】, 由于BDB支持事务处理，因此MySQL从此开始支持事务处理了。</p><p>- 2000，MySQL不仅公布自己的源代码，并采用GPL(GNU General Public License)许可协议，正 式进入开源世界。同年4月，MySQL对旧的存储引擎ISAM进行了整理，将其命名为MyISAM。</p><p>- 2001年，集成Heikki Tuuri的存储引擎【InnoDB】，这个引擎不仅能【支持事务处理，并且支持行 级锁】。后来该引擎被证明是最为成功的MySQL事务存储引擎。【MySQL与InnoDB的正式结合版本是4.0】</p><p>- 2003年12月，【MySQL 5.0】版本发布，提供了视图、存储过程等功能。 - 【2008年1月】，【MySQL AB公司被Sun公司以10亿美金收购】，MySQL数据库进入Sun时代。在Sun</p><p>时代，Sun公司对其进行了大量的推广、优化、Bug修复等工作。 - 2008年11月，MySQL 5.1发布，它提供了分区、事件管理，以及基于行的复制和基于磁盘的NDB集群系</p><p>统，同时修复了大量的Bug。 - 【2009年4月】，Oracle公司以74亿美元收购Sun公司，自此MySQL数据库进入Oracle时代，而其第</p><p>三方的存储引擎InnoDB早在2005年就被Oracle公司收购。</p><p>- 2010年12月，【MySQL 5.5发布】，其主要新特性包括半同步的复制及对SIGNAL/RESIGNAL的异常 处理功能的支持，【最重要的是InnoDB存储引擎终于变为当前MySQL的默认存储引擎】。MySQL 5.5不是时 隔两年后的一次简单的版本更新，而是加强了MySQL各个方面在企业级的特性。Oracle公司同时也承诺 MySQL 5.5和未来版本仍是采用GPL授权的开源产品</p></blockquote><h4 id="sql" tabindex="-1">SQL <a class="header-anchor" href="#sql" aria-hidden="true">#</a></h4><blockquote><p>​ SQL是Structured Query Language的缩写】，它的前身是著名的关系数据库原型系统System R所采 用的SEQUEL语言。作为一种访问【关系型数据库的标准语言】，SQL自问世以来得到了广泛的应用，不仅是著 名的大型商用数据库产品Oracle、DB2、Sybase、SQL Server支持它，很多开源的数据库产品如 PostgreSQL、MySQL也支持它，甚至一些小型的产品如Access也支持SQL。近些年蓬勃发展的NoSQL系统 最初是宣称不再需要SQL的，后来也不得不修正为Not Only SQL，来拥抱SQL。</p><p>蓝色巨人IBM对关系数据库以及SQL语言的形成和规范化产生了重大的影响，第一个版本的SQL标准SQL86 就是基于System R的手册而来的。Oracle在1979年率先推出了支持SQL的商用产品。随着数据库技术和应 用的发展，为不同RDBMS提供一致的语言成了一种现实需要。</p><p>对SQL标准影响最大的机构自然是那些著名的数据库产商，而具体的制订者则是一些非营利机构，例如 【国际标准化组织ISO、美国国家标准委员会ANSI】等。各国通常会按照 ISO标准和ANSI标准(这两个机构 的很多标准是差不多等同的)制定自己的国家标准。中国是ISO标准委员会的成员国，也经常翻译一些国际标 准对应的中文版。标准为了避免采用具体产品的术语，往往会抽象出很多名词，从而增加了阅读和理解的难 度，翻译成中文之后更容易词不达意。对于数据库系统实现者和用户而言，很多时候还不如直接读英文版本为 好。虽然正式的标准不像RFC那样可以从网络上免费获得，标准草案还是比较容易找到的(例如: <a href="http://www.jtc1sc32.org/doc/" target="_blank" rel="noopener noreferrer">http://www.jtc1sc32.org/doc/</a>)。待批准的标准草案和最终的标准也没有什么实质上的区别，能够满 足日常工作的需要。</p><p>下面是SQL发展的简要历史: 1986年，ANSI X3.135-1986，ISO/IEC 9075:1986，SQL-86 1989年，ANSI X3.135-1989，ISO/IEC 9075:1989，SQL-89 1992年，ANSI X3.135-1992，ISO/IEC 9075:1992，SQL-92(SQL2) 1999年，ISO/IEC 9075:1999，SQL:1999(SQL3)</p><p>2003年，ISO/IEC 9075:2003，SQL:2003 2008年，ISO/IEC 9075:2008，SQL:2008 2011年，ISO/IEC 9075:2011，SQL:2011</p><p>如果要了解标准的内容，比较推荐的方法是【泛读SQL92】(因为它涉及了SQL最基础和最核心的一些内 容)，然后增量式的阅读其他标准。</p></blockquote><blockquote><p>不只是mysql还有其他数据库，在SQL92或者SQL99这些国际SQL标准基础之上，它们还扩展了自己的一些 SQL语句，比如MySQL中的limit关键字</p></blockquote><h4 id="sql语言分类" tabindex="-1">Sql语言分类 <a class="header-anchor" href="#sql语言分类" aria-hidden="true">#</a></h4><blockquote><p>- 数据定义语言:简称【DDL】(Data Definition Language)，用来定义数据库对象:数据库，表，列 等。关键字:create，alter，drop等</p><p>- 数据操作语言:简称【DML】(Data Manipulation Language)，用来对数据库中表的记录进行更 新。关键字:insert，delete，update等</p><p>- 数据控制语言:简称【DCL】(Data Control Language)，用来定义数据库的访问权限和安全级别， 及创建用户;关键字:grant等</p><p>- 数据查询语言:简称【DQL】(Data Query Language)，用来查询数据库中表的记录。关键字: select，from，where等</p></blockquote><h2 id="掌握mysql在linux下的安装和远程连接" tabindex="-1">掌握mysql在linux下的安装和远程连接 <a class="header-anchor" href="#掌握mysql在linux下的安装和远程连接" aria-hidden="true">#</a></h2><h3 id="mysql基础" tabindex="-1">mysql基础 <a class="header-anchor" href="#mysql基础" aria-hidden="true">#</a></h3><blockquote><p>使用虚拟机</p><p>操作系统：centOS 7.+</p><p>MySQL: 5.6</p></blockquote><h3 id="安装mysql" tabindex="-1">安装mysql <a class="header-anchor" href="#安装mysql" aria-hidden="true">#</a></h3><div class="language-bash"><span class="copy"></span><pre><code><span class="line"><span style="color:#676E95;font-style:italic;">#下载rpm文件</span></span>
+<span class="line"><span style="color:#A6ACCD;">wget http://repo.mysql.com/mysql-community-release-el6-5.noarch.rpm </span><span style="color:#676E95;font-style:italic;">#执行rpm源文件</span></span>
+<span class="line"><span style="color:#A6ACCD;">rpm -ivh mysql-community-release-el6-5.noarch.rpm</span></span>
+<span class="line"><span style="color:#676E95;font-style:italic;">#执行安装文件</span></span>
+<span class="line"><span style="color:#A6ACCD;">yum install mysql-community-server</span></span>
+<span class="line"></span></code></pre></div><p>wget 时提示 -bash:wget command not found,很明显没有安装wget软件包。一般<a href="https://so.csdn.net/so/search?from=pc_blog_highlight&amp;q=linux" target="_blank" rel="noopener noreferrer">linux</a>最小化安装时，wget不会默认被安装,安装wget</p><div class="language-bash"><span class="copy"></span><pre><code><span class="line"><span style="color:#A6ACCD;">yum install wget</span></span>
+<span class="line"></span></code></pre></div><h3 id="启动服务" tabindex="-1">启动服务 <a class="header-anchor" href="#启动服务" aria-hidden="true">#</a></h3><div class="language-bash"><span class="copy"></span><pre><code><span class="line"><span style="color:#A6ACCD;">systemctl start mysqld</span></span>
+<span class="line"></span></code></pre></div><h3 id="重启服务" tabindex="-1">重启服务 <a class="header-anchor" href="#重启服务" aria-hidden="true">#</a></h3><div class="language-bash"><span class="copy"></span><pre><code><span class="line"><span style="color:#A6ACCD;">systemctl restart mysqld</span></span>
+<span class="line"></span></code></pre></div><h3 id="mysql的卸载" tabindex="-1"><strong>mysql的卸载</strong> <a class="header-anchor" href="#mysql的卸载" aria-hidden="true">#</a></h3><h4 id="查看mysql" tabindex="-1">查看mysql <a class="header-anchor" href="#查看mysql" aria-hidden="true">#</a></h4><div class="language-"><span class="copy"></span><pre><code><span class="line"><span style="color:#A6ACCD;">rpm -qa|grep mysql</span></span>
+<span class="line"><span style="color:#A6ACCD;">yum repolist all | grep mysql</span></span>
+<span class="line"><span style="color:#A6ACCD;"></span></span></code></pre></div><h4 id="卸载mysql" tabindex="-1">卸载mysql <a class="header-anchor" href="#卸载mysql" aria-hidden="true">#</a></h4><div class="language-bash"><span class="copy"></span><pre><code><span class="line"><span style="color:#A6ACCD;">yum remove -y mysql mysql-libs mysql-common </span><span style="color:#676E95;font-style:italic;">#卸载mysql</span></span>
+<span class="line"><span style="color:#A6ACCD;">rm -rf /var/lib/mysql </span><span style="color:#676E95;font-style:italic;">#删除mysql下的数据文件</span></span>
+<span class="line"><span style="color:#A6ACCD;">rm /etc/my.cnf </span><span style="color:#676E95;font-style:italic;">#删除mysql配置文件</span></span>
+<span class="line"><span style="color:#A6ACCD;">yum remove -y mysql-community-release-el6-5.noarch </span><span style="color:#676E95;font-style:italic;">#删除组件</span></span>
+<span class="line"></span></code></pre></div><h4 id="设置root用户密码" tabindex="-1">设置root用户密码 <a class="header-anchor" href="#设置root用户密码" aria-hidden="true">#</a></h4><div class="language-"><span class="copy"></span><pre><code><span class="line"><span style="color:#A6ACCD;">没设置过密码</span></span>
+<span class="line"><span style="color:#A6ACCD;">/usr/bin/mysqladmin -u root password &#39;root&#39;</span></span>
+<span class="line"><span style="color:#A6ACCD;"></span></span>
+<span class="line"><span style="color:#A6ACCD;">设置过密码</span></span>
+<span class="line"><span style="color:#A6ACCD;">/usr/bin/mysqladmin -u root -p &#39;旧密码&#39; password &#39;root&#39;</span></span>
+<span class="line"><span style="color:#A6ACCD;"></span></span></code></pre></div><h3 id="登录mysql" tabindex="-1">登录mysql <a class="header-anchor" href="#登录mysql" aria-hidden="true">#</a></h3><div class="language-"><span class="copy"></span><pre><code><span class="line"><span style="color:#A6ACCD;">mysql -uroot -proot</span></span>
+<span class="line"><span style="color:#A6ACCD;"></span></span></code></pre></div><blockquote><p>-u:指定数据库用户名</p><p>-p:指定数据库密码，记住-u和登录密码之间没有空格</p></blockquote><h3 id="退出mysql命令行命令" tabindex="-1">退出mysql命令行命令 <a class="header-anchor" href="#退出mysql命令行命令" aria-hidden="true">#</a></h3><p>quit;</p><div class="language-bash"><span class="copy"></span><pre><code><span class="line"><span style="color:#676E95;font-style:italic;">#示例</span></span>
+<span class="line"><span style="color:#A6ACCD;">mysql</span><span style="color:#89DDFF;">&gt;</span><span style="color:#A6ACCD;">quit</span><span style="color:#89DDFF;">;</span></span>
+<span class="line"></span></code></pre></div><p>或者按两次</p><p>mac: command+c</p><p>Windows: ctrl+c</p><h3 id="配置mysql" tabindex="-1">配置mysql <a class="header-anchor" href="#配置mysql" aria-hidden="true">#</a></h3><div class="language-"><span class="copy"></span><pre><code><span class="line"><span style="color:#A6ACCD;">vim /etc/my.cnf</span></span>
+<span class="line"><span style="color:#A6ACCD;"></span></span></code></pre></div><p><strong>按 i键 可修改模式</strong></p><p><strong>修改内容如下</strong></p><div class="language-bash"><span class="copy"></span><pre><code><span class="line"><span style="color:#89DDFF;">[</span><span style="color:#A6ACCD;">mysql</span><span style="color:#89DDFF;">]</span></span>
+<span class="line"><span style="color:#676E95;font-style:italic;"># MySQL设置大小写不敏感:默认:区分表名的大小写，不区分列名的大小写 # 0:大小写敏感 1:大小写不敏感</span></span>
+<span class="line"><span style="color:#A6ACCD;">lower_case_table_names=1</span></span>
+<span class="line"><span style="color:#676E95;font-style:italic;"># 默认字符集</span></span>
+<span class="line"><span style="color:#A6ACCD;">character-set-server=utf8</span></span>
+<span class="line"></span></code></pre></div><p><strong>按esc键退出 修改</strong></p><p><strong>输入 :wq 回车保存</strong></p><h2 id="mysql远程连接授权" tabindex="-1">mysql远程连接授权 <a class="header-anchor" href="#mysql远程连接授权" aria-hidden="true">#</a></h2><p><strong>授权命令</strong></p><div class="language-"><span class="copy"></span><pre><code><span class="line"><span style="color:#A6ACCD;">grant 权限 on 数据库对象 to 用户</span></span>
+<span class="line"><span style="color:#A6ACCD;"></span></span></code></pre></div><p><strong>示例</strong></p><p>授权root用户对所有数据库对象的全部操作权限：</p><div class="language-"><span class="copy"></span><pre><code><span class="line"><span style="color:#A6ACCD;">GRANT ALL PRIVILEGES ON *.* TO &#39;root&#39;@&#39;%&#39; IDENTIFIED BY &#39;root&#39; WITH GRANT OPTION;</span></span>
+<span class="line"><span style="color:#A6ACCD;"></span></span></code></pre></div><p>命令说明：</p><ul><li><p>ALL PRIVILEGES：表示授予所有的权限，此处可以指定具体的授权权限</p></li><li><h6 id="：表示所有库中的所有表" tabindex="-1">* <em>.</em> * ：表示所有库中的所有表 <a class="header-anchor" href="#：表示所有库中的所有表" aria-hidden="true">#</a></h6></li><li><p>&#39;root&#39;@&#39;%&#39; ： root是数据库的用户名，%是表示是任意ip地址,可以指定具体ip地址。</p></li><li><p>IDENTIFIED BY &#39;root&#39; ：root是数据库的密码</p></li></ul><div class="language-"><span class="copy"></span><pre><code><span class="line"><span style="color:#A6ACCD;">FLUSH PRIVILEGES;--刷新权限</span></span>
+<span class="line"><span style="color:#A6ACCD;"></span></span></code></pre></div><h3 id="关闭防火墙" tabindex="-1">关闭防火墙 <a class="header-anchor" href="#关闭防火墙" aria-hidden="true">#</a></h3><div class="language-"><span class="copy"></span><pre><code><span class="line"><span style="color:#A6ACCD;">systemctl stop firewalld(默认)</span></span>
+<span class="line"><span style="color:#A6ACCD;">systemctl disable firewalld.service(设置开机不启动)</span></span>
+<span class="line"><span style="color:#A6ACCD;"></span></span></code></pre></div><h3 id="客户端远程访问" tabindex="-1">客户端远程访问 <a class="header-anchor" href="#客户端远程访问" aria-hidden="true">#</a></h3><p>如果你不知道当前虚拟机的ip</p><div class="language-"><span class="copy"></span><pre><code><span class="line"><span style="color:#A6ACCD;">ip address |sed -rn &#39;/state UP/{n;n;s#^ *inet (.*)/.*$#\1#gp}&#39;</span></span>
+<span class="line"><span style="color:#A6ACCD;"></span></span></code></pre></div><div class="language-"><span class="copy"></span><pre><code><span class="line"><span style="color:#A6ACCD;">利用navicat可以远程访问MySQL</span></span>
+<span class="line"><span style="color:#A6ACCD;"></span></span></code></pre></div><p><img src="/assets/navcat.a71b1cca.png" alt="navcat"></p><h2 id="ddl语句" tabindex="-1">ddl语句 <a class="header-anchor" href="#ddl语句" aria-hidden="true">#</a></h2><p><strong>数据库操作：database</strong></p><h3 id="创建数据库" tabindex="-1">创建数据库 <a class="header-anchor" href="#创建数据库" aria-hidden="true">#</a></h3><div class="language-"><span class="copy"></span><pre><code><span class="line"><span style="color:#A6ACCD;">create database 数据库名;</span></span>
+<span class="line"><span style="color:#A6ACCD;">create database 数据库名 character set 字符集;</span></span>
+<span class="line"><span style="color:#A6ACCD;"></span></span></code></pre></div><h3 id="查看数据库" tabindex="-1">查看数据库 <a class="header-anchor" href="#查看数据库" aria-hidden="true">#</a></h3><p>查看数据库服务器中的所有的数据库；</p><div class="language-"><span class="copy"></span><pre><code><span class="line"><span style="color:#A6ACCD;">show databases;</span></span>
+<span class="line"><span style="color:#A6ACCD;"></span></span></code></pre></div><p><img src="/assets/showdatabase.f9a9dc13.png" alt="showdatabase"></p><p>查看某个数据库的定义的信息；</p><div class="language-"><span class="copy"></span><pre><code><span class="line"><span style="color:#A6ACCD;">show create database 数据库名;</span></span>
+<span class="line"><span style="color:#A6ACCD;"></span></span></code></pre></div><h3 id="删除数据库" tabindex="-1">删除数据库 <a class="header-anchor" href="#删除数据库" aria-hidden="true">#</a></h3><div class="language-"><span class="copy"></span><pre><code><span class="line"><span style="color:#A6ACCD;">drop database 数据库名;</span></span>
+<span class="line"><span style="color:#A6ACCD;"></span></span></code></pre></div><h3 id="其他数据库操作命令" tabindex="-1">其他数据库操作命令 <a class="header-anchor" href="#其他数据库操作命令" aria-hidden="true">#</a></h3><div class="language-"><span class="copy"></span><pre><code><span class="line"><span style="color:#A6ACCD;">use 数据库名; #使用xxx数据库</span></span>
+<span class="line"><span style="color:#A6ACCD;"></span></span></code></pre></div><h3 id="查看正在使用的数据库；" tabindex="-1">查看正在使用的数据库； <a class="header-anchor" href="#查看正在使用的数据库；" aria-hidden="true">#</a></h3><div class="language-"><span class="copy"></span><pre><code><span class="line"><span style="color:#A6ACCD;">select database()</span></span>
+<span class="line"><span style="color:#A6ACCD;"></span></span></code></pre></div><h3 id="表操作：table" tabindex="-1">表操作：table <a class="header-anchor" href="#表操作：table" aria-hidden="true">#</a></h3><h3 id="字段类型" tabindex="-1">字段类型 <a class="header-anchor" href="#字段类型" aria-hidden="true">#</a></h3><ul><li><p>常见的类型：</p><div class="language-"><span class="copy"></span><pre><code><span class="line"><span style="color:#A6ACCD;">数字类型：int</span></span>
+<span class="line"><span style="color:#A6ACCD;"></span></span>
+<span class="line"><span style="color:#A6ACCD;">浮点类型：double</span></span>
+<span class="line"><span style="color:#A6ACCD;"></span></span>
+<span class="line"><span style="color:#A6ACCD;">字符型：varchar（可变长字符型）</span></span>
+<span class="line"><span style="color:#A6ACCD;"></span></span>
+<span class="line"><span style="color:#A6ACCD;">日期类型：data（只有年月日）；datatime(年月日时分秒)</span></span>
+<span class="line"><span style="color:#A6ACCD;"></span></span>
+<span class="line"><span style="color:#A6ACCD;">boolean类型：不支持，一般使用tinyint代替（值为0和1）</span></span>
+<span class="line"><span style="color:#A6ACCD;"></span></span></code></pre></div></li></ul><h3 id="创建表" tabindex="-1">创建表 <a class="header-anchor" href="#创建表" aria-hidden="true">#</a></h3><div class="language-"><span class="copy"></span><pre><code><span class="line"><span style="color:#A6ACCD;">create table 表名(</span></span>
+<span class="line"><span style="color:#A6ACCD;">  字段名 类型（长度）约束,</span></span>
+<span class="line"><span style="color:#A6ACCD;">  字段名 类型（长度）约束</span></span>
+<span class="line"><span style="color:#A6ACCD;">);</span></span>
+<span class="line"><span style="color:#A6ACCD;"></span></span></code></pre></div><h4 id="单表约束" tabindex="-1">单表约束 <a class="header-anchor" href="#单表约束" aria-hidden="true">#</a></h4><div class="language-"><span class="copy"></span><pre><code><span class="line"><span style="color:#A6ACCD;">- 主键约束：primary key</span></span>
+<span class="line"><span style="color:#A6ACCD;"></span></span>
+<span class="line"><span style="color:#A6ACCD;">- 唯一约束：unique</span></span>
+<span class="line"><span style="color:#A6ACCD;"></span></span>
+<span class="line"><span style="color:#A6ACCD;">- 非空约束：not null</span></span>
+<span class="line"><span style="color:#A6ACCD;"></span></span></code></pre></div><p><strong>注意</strong></p><p>主键约束 = 唯一约束+非空约束</p><h3 id="查看表" tabindex="-1">查看表 <a class="header-anchor" href="#查看表" aria-hidden="true">#</a></h3><p>查看数据库中的所有表：</p><div class="language-"><span class="copy"></span><pre><code><span class="line"><span style="color:#A6ACCD;">show tables;</span></span>
+<span class="line"><span style="color:#A6ACCD;"></span></span></code></pre></div><p>查看表结构</p><div class="language-"><span class="copy"></span><pre><code><span class="line"><span style="color:#A6ACCD;">desc 表名;</span></span>
+<span class="line"><span style="color:#A6ACCD;"></span></span></code></pre></div><h3 id="删除表" tabindex="-1">删除表 <a class="header-anchor" href="#删除表" aria-hidden="true">#</a></h3><div class="language-"><span class="copy"></span><pre><code><span class="line"><span style="color:#A6ACCD;">drop table 表名;</span></span>
+<span class="line"><span style="color:#A6ACCD;"></span></span></code></pre></div><h3 id="修改表" tabindex="-1">修改表 <a class="header-anchor" href="#修改表" aria-hidden="true">#</a></h3><div class="language-"><span class="copy"></span><pre><code><span class="line"><span style="color:#A6ACCD;">alter table 表名 add 列名 类型(长度) 约束;  --修改表添加列</span></span>
+<span class="line"><span style="color:#A6ACCD;"></span></span>
+<span class="line"><span style="color:#A6ACCD;">alter table 表名 modify 列名 类型(长度) 约束;  --修改表修改列的类型长度及约束</span></span>
+<span class="line"><span style="color:#A6ACCD;"></span></span>
+<span class="line"><span style="color:#A6ACCD;">alter table 表名 change 旧列名 新列名 类型(约束) 约束; --修改表修改列名</span></span>
+<span class="line"><span style="color:#A6ACCD;"></span></span>
+<span class="line"><span style="color:#A6ACCD;">alter table 表名 drop 列名;  --修改表删除列</span></span>
+<span class="line"><span style="color:#A6ACCD;"></span></span>
+<span class="line"><span style="color:#A6ACCD;">rename table 表名 to 新表名;  --修改表名</span></span>
+<span class="line"><span style="color:#A6ACCD;"></span></span>
+<span class="line"><span style="color:#A6ACCD;">alter table 表名 character set 字符集;  --修改表的字符集</span></span>
+<span class="line"><span style="color:#A6ACCD;"></span></span></code></pre></div><h2 id="dml语句" tabindex="-1">DML语句 <a class="header-anchor" href="#dml语句" aria-hidden="true">#</a></h2><h3 id="插入记录：insert" tabindex="-1">插入记录：insert <a class="header-anchor" href="#插入记录：insert" aria-hidden="true">#</a></h3><ul><li><p>语法：</p><div class="language-"><span class="copy"></span><pre><code><span class="line"><span style="color:#A6ACCD;">insert into 表 (列名1，列名2，列名...) values （值1,值2,值3...）; 向表中插入某些列</span></span>
+<span class="line"><span style="color:#A6ACCD;"></span></span>
+<span class="line"><span style="color:#A6ACCD;"></span></span>
+<span class="line"><span style="color:#A6ACCD;">insert into 表 values (值1,值2,值3...);  向表中插入点所有列</span></span>
+<span class="line"><span style="color:#A6ACCD;"></span></span>
+<span class="line"><span style="color:#A6ACCD;"></span></span>
+<span class="line"><span style="color:#A6ACCD;">insert into 表 (列名1,列名2,列名3...) values select （列名1，列名2,列名3..） from 表</span></span>
+<span class="line"><span style="color:#A6ACCD;"></span></span>
+<span class="line"><span style="color:#A6ACCD;"></span></span>
+<span class="line"><span style="color:#A6ACCD;">insert into 表 values select * from 表</span></span>
+<span class="line"><span style="color:#A6ACCD;"></span></span></code></pre></div></li><li><p>注意：</p><ol><li>列名数与values后面的值的个数相等</li><li>列的顺序与插入的值得顺序一致</li><li>列名的类型与插入的值要一致</li><li>插入值的时候不得超过最大长度</li><li>值如果的字符串或者日期需要加引号&#39;&#39;（一般是单引）</li></ol></li><li><p>例如：</p></li></ul><div class="language-"><span class="copy"></span><pre><code><span class="line"><span style="color:#A6ACCD;">INSERT INTO sort(sid,sname) VALUES(&#39;s001&#39;, &#39;电器&#39;); </span></span>
+<span class="line"><span style="color:#A6ACCD;"></span></span>
+<span class="line"><span style="color:#A6ACCD;">INSERT INTO sort(sid,sname) VALUES(&#39;s002&#39;, &#39;服饰&#39;);</span></span>
+<span class="line"><span style="color:#A6ACCD;"></span></span>
+<span class="line"><span style="color:#A6ACCD;">INSERT INTO sort VALUES(&#39;s003&#39;, &#39;化妆品&#39;);</span></span>
+<span class="line"><span style="color:#A6ACCD;"></span></span>
+<span class="line"><span style="color:#A6ACCD;">INSERT INTO sort VALUES(&#39;s004&#39;,&#39;书籍&#39;);</span></span>
+<span class="line"><span style="color:#A6ACCD;"></span></span></code></pre></div><h3 id="更新记录：update" tabindex="-1">更新记录：update <a class="header-anchor" href="#更新记录：update" aria-hidden="true">#</a></h3><ul><li>语法：</li></ul><div class="language-"><span class="copy"></span><pre><code><span class="line"><span style="color:#A6ACCD;">update 表名 set 字段名=值,字段名=值;</span></span>
+<span class="line"><span style="color:#A6ACCD;"></span></span>
+<span class="line"><span style="color:#A6ACCD;">update 表名 set 字段名=值,字段名=值 where 条件;</span></span>
+<span class="line"><span style="color:#A6ACCD;"></span></span></code></pre></div><ul><li>注意 <ol><li>列名的类型与修改的值要一致</li><li>修改值的时候不能超过最大长度</li><li>值如果是字符串或者日期需要加&#39;&#39;</li></ol></li></ul><h3 id="删除记录：delete" tabindex="-1">删除记录：delete <a class="header-anchor" href="#删除记录：delete" aria-hidden="true">#</a></h3><ul><li><p>语法</p><div class="language-"><span class="copy"></span><pre><code><span class="line"><span style="color:#A6ACCD;">delete from 表名 [where 条件];</span></span>
+<span class="line"><span style="color:#A6ACCD;"></span></span></code></pre></div></li><li><p>面试题</p><div class="language-"><span class="copy"></span><pre><code><span class="line"><span style="color:#A6ACCD;">删除表中所有记录使用【delete from 表名】，还是用【truncate table 表名】?</span></span>
+<span class="line"><span style="color:#A6ACCD;">删除方式:</span></span>
+<span class="line"><span style="color:#A6ACCD;">- delete :一条一条删除，不清空auto_increment记录数。</span></span>
+<span class="line"><span style="color:#A6ACCD;">- truncate :直接将表删除，重新建表，auto_increment将置为零，从新开始。</span></span>
+<span class="line"><span style="color:#A6ACCD;"></span></span></code></pre></div></li></ul><h2 id="dql语句" tabindex="-1">dql语句 <a class="header-anchor" href="#dql语句" aria-hidden="true">#</a></h2><p><strong>准备工作</strong></p><p>创建数据库</p><div class="language-"><span class="copy"></span><pre><code><span class="line"><span style="color:#A6ACCD;">create database test;</span></span>
+<span class="line"><span style="color:#A6ACCD;"></span></span></code></pre></div><p>使用test数据库</p><div class="language-"><span class="copy"></span><pre><code><span class="line"><span style="color:#A6ACCD;">use test;</span></span>
+<span class="line"><span style="color:#A6ACCD;"></span></span></code></pre></div><p>创建商品表：</p><div class="language-"><span class="copy"></span><pre><code><span class="line"><span style="color:#A6ACCD;">#商品表</span></span>
+<span class="line"><span style="color:#A6ACCD;"></span></span>
+<span class="line"><span style="color:#A6ACCD;">CREATE TABLE product (</span></span>
+<span class="line"><span style="color:#A6ACCD;">  pid int primary key auto_increment, #自增加 auto_increment</span></span>
+<span class="line"><span style="color:#A6ACCD;">  pname varchar(20),#商品名称</span></span>
+<span class="line"><span style="color:#A6ACCD;">  price double,#商品价格</span></span>
+<span class="line"><span style="color:#A6ACCD;">  pdate date,#日期</span></span>
+<span class="line"><span style="color:#A6ACCD;">  cid int #分类id</span></span>
+<span class="line"><span style="color:#A6ACCD;">)ENGINE=MyISAM DEFAULT CHARSET=utf8;##设置编码 否则插入数据时一些版本可能会报错</span></span>
+<span class="line"><span style="color:#A6ACCD;"></span></span>
+<span class="line"><span style="color:#A6ACCD;">##  Incorrect string value: &#39;\xE6\x89\x8B\xE6\x9C\xBA&#39; for column &#39;pname&#39; at row 1</span></span>
+<span class="line"><span style="color:#A6ACCD;"></span></span>
+<span class="line"><span style="color:#A6ACCD;">##这类错误都是编码不一致</span></span>
+<span class="line"><span style="color:#A6ACCD;"></span></span>
+<span class="line"><span style="color:#A6ACCD;">#目录表</span></span>
+<span class="line"><span style="color:#A6ACCD;"></span></span>
+<span class="line"><span style="color:#A6ACCD;">create table category(</span></span>
+<span class="line"><span style="color:#A6ACCD;">  id int primary key,</span></span>
+<span class="line"><span style="color:#A6ACCD;">  cname varchar(100)</span></span>
+<span class="line"><span style="color:#A6ACCD;">)ENGINE=MyISAM DEFAULT CHARSET=utf8;</span></span>
+<span class="line"><span style="color:#A6ACCD;"></span></span>
+<span class="line"><span style="color:#A6ACCD;"></span></span>
+<span class="line"><span style="color:#A6ACCD;">insert into product values(null,&#39;泰国大榴莲&#39;,98,null,1);</span></span>
+<span class="line"><span style="color:#A6ACCD;">insert into product values(null,&#39;泰国大枣&#39;,38,null,1);</span></span>
+<span class="line"><span style="color:#A6ACCD;">insert into product values(null,&#39;新疆切糕&#39;,68,null,2);</span></span>
+<span class="line"><span style="color:#A6ACCD;">insert into product values(null,&#39;十三香&#39;,10,null,2);</span></span>
+<span class="line"><span style="color:#A6ACCD;">insert into product values(null,&#39;泰国大枣&#39;,20,null,2);</span></span>
+<span class="line"><span style="color:#A6ACCD;">insert into product values(null,&#39;泰国大枣&#39;,98,null,20);#没有对应</span></span>
+<span class="line"><span style="color:#A6ACCD;">insert into product values(null,&#39;iphone手机&#39;,800,null,30);#没有对应</span></span>
+<span class="line"><span style="color:#A6ACCD;"></span></span>
+<span class="line"><span style="color:#A6ACCD;">#没有对应是指商品类型没有对应的目录或者商品，不必困惑</span></span>
+<span class="line"><span style="color:#A6ACCD;"></span></span>
+<span class="line"><span style="color:#A6ACCD;">insert into category values(1,&#39;国外食品&#39;);</span></span>
+<span class="line"><span style="color:#A6ACCD;">insert into category values(2,&#39;国内食品&#39;);</span></span>
+<span class="line"><span style="color:#A6ACCD;">insert into category values(3,&#39;国内服饰&#39;);#没有对应</span></span>
+<span class="line"><span style="color:#A6ACCD;"></span></span></code></pre></div><p>查看表中数据</p><div class="language-"><span class="copy"></span><pre><code><span class="line"><span style="color:#A6ACCD;">select * from product;</span></span>
+<span class="line"><span style="color:#A6ACCD;">select * from category;</span></span>
+<span class="line"><span style="color:#A6ACCD;"></span></span></code></pre></div><p><img src="/assets/testTable.ee4e380f.png" alt="testTable"></p><h3 id="完整dql语法顺序" tabindex="-1">完整dql语法顺序 <a class="header-anchor" href="#完整dql语法顺序" aria-hidden="true">#</a></h3><div class="language-"><span class="copy"></span><pre><code><span class="line"><span style="color:#A6ACCD;">select distinct  </span></span>
+<span class="line"><span style="color:#A6ACCD;">    &lt; select_list &gt;</span></span>
+<span class="line"><span style="color:#A6ACCD;">from </span></span>
+<span class="line"><span style="color:#A6ACCD;">    &lt; left_table &gt; &lt; join_type&gt;</span></span>
+<span class="line"><span style="color:#A6ACCD;">join &lt; right_table &gt; on &lt; join_condition &gt;</span></span>
+<span class="line"><span style="color:#A6ACCD;">where </span></span>
+<span class="line"><span style="color:#A6ACCD;">    &lt; where_codition &gt;</span></span>
+<span class="line"><span style="color:#A6ACCD;">group by</span></span>
+<span class="line"><span style="color:#A6ACCD;">    &lt; group_by_list &gt;</span></span>
+<span class="line"><span style="color:#A6ACCD;">having</span></span>
+<span class="line"><span style="color:#A6ACCD;">    &lt; having_condition &gt;</span></span>
+<span class="line"><span style="color:#A6ACCD;">order by</span></span>
+<span class="line"><span style="color:#A6ACCD;">    &lt; order_by_condition &gt;</span></span>
+<span class="line"><span style="color:#A6ACCD;">limit &lt; limit_number &gt;</span></span>
+<span class="line"><span style="color:#A6ACCD;"></span></span></code></pre></div><ul><li>distinct 去重复 要查的东西</li><li>from 从这个表中</li><li>join 连哪个表</li><li>on 连接条件</li><li>where 过滤条件</li><li>group by 分组</li><li>having 分组条件</li><li>order by 排序</li><li>limit 分页</li></ul><h4 id="简单查询" tabindex="-1">简单查询 <a class="header-anchor" href="#简单查询" aria-hidden="true">#</a></h4><ul><li><p>SQL语法关键字</p><div class="language-"><span class="copy"></span><pre><code><span class="line"><span style="color:#A6ACCD;">select </span></span>
+<span class="line"><span style="color:#A6ACCD;">from</span></span>
+<span class="line"><span style="color:#A6ACCD;"></span></span></code></pre></div></li><li><p>案例</p><ol><li><p>查询所有的商品</p><div class="language-"><span class="copy"></span><pre><code><span class="line"><span style="color:#A6ACCD;">select * form product;</span></span>
+<span class="line"><span style="color:#A6ACCD;">*是所有</span></span>
+<span class="line"><span style="color:#A6ACCD;">product 表</span></span>
+<span class="line"><span style="color:#A6ACCD;"></span></span></code></pre></div></li><li><p>查询商品名和商品价格</p><div class="language-"><span class="copy"></span><pre><code><span class="line"><span style="color:#A6ACCD;">select pname,price from product;</span></span>
+<span class="line"><span style="color:#A6ACCD;"></span></span></code></pre></div><p><img src="/assets/pname.2796edad.png" alt="pname"></p></li><li><p>别名查询，使用的<strong>as</strong>关键字,as可以省略</p><p>表别名：</p><div class="language-"><span class="copy"></span><pre><code><span class="line"><span style="color:#A6ACCD;">select * from product as p;</span></span>
+<span class="line"><span style="color:#A6ACCD;"></span></span></code></pre></div><p>列别名：</p><div class="language-"><span class="copy"></span><pre><code><span class="line"><span style="color:#A6ACCD;">select pname as pn from product;</span></span>
+<span class="line"><span style="color:#A6ACCD;"></span></span></code></pre></div></li><li><p>去掉重复值</p><div class="language-"><span class="copy"></span><pre><code><span class="line"><span style="color:#A6ACCD;">select distinct price from product;</span></span>
+<span class="line"><span style="color:#A6ACCD;"></span></span></code></pre></div></li><li><p>查询结果是表达式（运算查询）：将所有商品的价格+10元进行显示</p><div class="language-"><span class="copy"></span><pre><code><span class="line"><span style="color:#A6ACCD;">select pname,price+10 from product;</span></span>
+<span class="line"><span style="color:#A6ACCD;"></span></span></code></pre></div></li></ol></li></ul><h4 id="条件查询" tabindex="-1">条件查询 <a class="header-anchor" href="#条件查询" aria-hidden="true">#</a></h4><ul><li><p>SQL语法关键词:</p><div class="language-"><span class="copy"></span><pre><code><span class="line"><span style="color:#A6ACCD;">where</span></span>
+<span class="line"><span style="color:#A6ACCD;"></span></span></code></pre></div></li><li><p>案例：</p><ol><li><p>查询商品名称为十三香的商品所有信息</p><div class="language-"><span class="copy"></span><pre><code><span class="line"><span style="color:#A6ACCD;">select * from product where pname = &#39;十三香&#39;;</span></span>
+<span class="line"><span style="color:#A6ACCD;"></span></span></code></pre></div><p><img src="/assets/13.6eaa1460.png" alt="十三香"></p></li><li><p>查询商品价格 &gt; 60元的所有商品信息；</p><div class="language-"><span class="copy"></span><pre><code><span class="line"><span style="color:#A6ACCD;">select * from  product where price &gt; 60;</span></span>
+<span class="line"><span style="color:#A6ACCD;"></span></span></code></pre></div><p><img src="/assets/60.cb1fac84.png" alt="&gt;60"></p></li></ol></li><li><p>where后的条件写法</p><div class="language-"><span class="copy"></span><pre><code><span class="line"><span style="color:#A6ACCD;">&gt;,&lt;,=,&gt;=,&lt;=,&lt;&gt;</span></span>
+<span class="line"><span style="color:#A6ACCD;"></span></span>
+<span class="line"><span style="color:#A6ACCD;">like 使用占位符 - 和 % _代表一个字符 %代表任意个字符。</span></span>
+<span class="line"><span style="color:#A6ACCD;">   select * from product where pname like &#39;%新%&#39;;</span></span>
+<span class="line"><span style="color:#A6ACCD;">in在某个范围中获得值（exists）</span></span>
+<span class="line"><span style="color:#A6ACCD;">  select * from product where pid in (2,5,8);</span></span>
+<span class="line"><span style="color:#A6ACCD;"></span></span></code></pre></div><p><img src="/assets/operation.2f372e34.png" alt="运算符"></p></li></ul><h4 id="" tabindex="-1"><a class="header-anchor" href="#" aria-hidden="true">#</a></h4><h4 id="排序" tabindex="-1">排序 <a class="header-anchor" href="#排序" aria-hidden="true">#</a></h4><ul><li><p>SQL语法关键字</p><div class="language-"><span class="copy"></span><pre><code><span class="line"><span style="color:#A6ACCD;">order by</span></span>
+<span class="line"><span style="color:#A6ACCD;"></span></span>
+<span class="line"><span style="color:#A6ACCD;">ASC(升序)  DESC(降序)</span></span>
+<span class="line"><span style="color:#A6ACCD;"></span></span></code></pre></div></li><li><p>案例</p><ol><li><p>查询所有的商品，按价格进行排序（asc-升序，desc-降序）</p><div class="language-"><span class="copy"></span><pre><code><span class="line"><span style="color:#A6ACCD;">select * from product order by price;</span></span>
+<span class="line"><span style="color:#A6ACCD;"></span></span></code></pre></div></li><li><p>查询名称有新的商品的信息并且按价格降序排序</p><div class="language-"><span class="copy"></span><pre><code><span class="line"><span style="color:#A6ACCD;">select * from product where pname like &#39;%新%&#39; order by price desc;</span></span>
+<span class="line"><span style="color:#A6ACCD;"></span></span></code></pre></div></li></ol></li></ul><h4 id="聚合函数（组函数）" tabindex="-1">聚合函数（组函数） <a class="header-anchor" href="#聚合函数（组函数）" aria-hidden="true">#</a></h4><ul><li><p>特点：只对单列进行操作</p></li><li><p>常用的聚合函数</p><div class="language-"><span class="copy"></span><pre><code><span class="line"><span style="color:#A6ACCD;">sum():求某一列的和</span></span>
+<span class="line"><span style="color:#A6ACCD;">avg():求某一列的平均值</span></span>
+<span class="line"><span style="color:#A6ACCD;">max():求某一列的最大值</span></span>
+<span class="line"><span style="color:#A6ACCD;">min():求某一列的最小值</span></span>
+<span class="line"><span style="color:#A6ACCD;">count():求某一列的元素个数</span></span>
+<span class="line"><span style="color:#A6ACCD;"></span></span></code></pre></div></li><li><p>案例：</p><ol><li><p>获得所有商品的价格的总和</p><div class="language-"><span class="copy"></span><pre><code><span class="line"><span style="color:#A6ACCD;">select sum(price) from product;</span></span>
+<span class="line"><span style="color:#A6ACCD;"></span></span></code></pre></div></li><li><p>获得所有商品的平均价格</p><div class="language-"><span class="copy"></span><pre><code><span class="line"><span style="color:#A6ACCD;">select avg(price) from product;</span></span>
+<span class="line"><span style="color:#A6ACCD;"></span></span></code></pre></div></li><li><p>获得所有商品的个数</p><div class="language-"><span class="copy"></span><pre><code><span class="line"><span style="color:#A6ACCD;">select count(*) from product;</span></span>
+<span class="line"><span style="color:#A6ACCD;"></span></span></code></pre></div></li></ol></li></ul><h4 id="分组" tabindex="-1">分组 <a class="header-anchor" href="#分组" aria-hidden="true">#</a></h4><ul><li><p>SQL语法关键字</p><div class="language-"><span class="copy"></span><pre><code><span class="line"><span style="color:#A6ACCD;">group by</span></span>
+<span class="line"><span style="color:#A6ACCD;"></span></span>
+<span class="line"><span style="color:#A6ACCD;">having</span></span>
+<span class="line"><span style="color:#A6ACCD;"></span></span></code></pre></div></li><li><p>案例：</p><ol><li><p>根据cid字段分组，分组后统计商品的个数</p><div class="language-"><span class="copy"></span><pre><code><span class="line"><span style="color:#A6ACCD;">select cid,count(*) from product group by cid;</span></span>
+<span class="line"><span style="color:#A6ACCD;"></span></span></code></pre></div></li><li><p>根据cid分组，分组统计每组商品的平均价格，并且平均价格&gt;60；</p><div class="language-"><span class="copy"></span><pre><code><span class="line"><span style="color:#A6ACCD;">select cid,avg(price) from product group by cid having avg(price) &gt; 60;</span></span>
+<span class="line"><span style="color:#A6ACCD;"></span></span></code></pre></div></li></ol></li><li><p>注意事项：</p><ol><li>select语句中的列（非聚合函数列）,必须出现在group by子句中</li><li>group by子句中的列，不一定要出现在select语句中</li><li>聚合函数只能出现select语句中或者having语句中，一定不能出现where语句中</li></ol></li></ul><h4 id="分页查询" tabindex="-1">分页查询 <a class="header-anchor" href="#分页查询" aria-hidden="true">#</a></h4><ul><li><p>关键字：</p><div class="language-"><span class="copy"></span><pre><code><span class="line"><span style="color:#A6ACCD;">limit [offset,] rows</span></span>
+<span class="line"><span style="color:#A6ACCD;"></span></span></code></pre></div><p><strong>limit关键字不是SQL92标准提出的关键字，它是MySQL独有的语法</strong>。</p><p>通过limit关键字，MySQL实现了物理分页。</p><p>分页分为<strong>逻辑分页</strong>和<strong>物理分页</strong>：</p><div class="language-"><span class="copy"></span><pre><code><span class="line"><span style="color:#A6ACCD;">逻辑分页：将数据库中的数据查询到内存之后再进行分页。</span></span>
+<span class="line"><span style="color:#A6ACCD;"></span></span>
+<span class="line"><span style="color:#A6ACCD;"></span></span>
+<span class="line"><span style="color:#A6ACCD;">物理分页：通过limit关键字，直接在数据库中进行分页，最终返回的数据是分页后的数据</span></span>
+<span class="line"><span style="color:#A6ACCD;"></span></span></code></pre></div></li><li><p>格式：</p><div class="language-"><span class="copy"></span><pre><code><span class="line"><span style="color:#A6ACCD;">select * from table limit [offset,] rows;</span></span>
+<span class="line"><span style="color:#A6ACCD;"></span></span></code></pre></div><p>offset：偏移量（跳过多少条）</p><p>rows：每页多少行记录</p></li><li><p>案例</p><div class="language-"><span class="copy"></span><pre><code><span class="line"><span style="color:#A6ACCD;">分页查询商品表，每页3条记录，查第一页</span></span>
+<span class="line"><span style="color:#A6ACCD;">select * from product limit 0,3;</span></span>
+<span class="line"><span style="color:#A6ACCD;"></span></span></code></pre></div></li></ul><h3 id="子查询" tabindex="-1">子查询 <a class="header-anchor" href="#子查询" aria-hidden="true">#</a></h3><ul><li><p>定义</p><div class="language-"><span class="copy"></span><pre><code><span class="line"><span style="color:#A6ACCD;">子查询允许把一个查询嵌套在另一个查询当中。</span></span>
+<span class="line"><span style="color:#A6ACCD;"></span></span>
+<span class="line"><span style="color:#A6ACCD;">子查询，又叫内部查询或者嵌套查询，相对于内部查询，包含内部查询的查询语句就称为外部查询。</span></span>
+<span class="line"><span style="color:#A6ACCD;"></span></span>
+<span class="line"><span style="color:#A6ACCD;">子查询可以包含普通select可以包括的任意子句，比如：distinct、group by 、order by、limit、join和union等。</span></span>
+<span class="line"><span style="color:#A6ACCD;"></span></span>
+<span class="line"><span style="color:#A6ACCD;">但是对应的外部查询必须是以下语句之一：select、insert、update、delete、set和do</span></span>
+<span class="line"><span style="color:#A6ACCD;"></span></span>
+<span class="line"><span style="color:#A6ACCD;">使用的操作符: = &gt; &lt; &gt;= &lt;= &lt;&gt; ANY IN SOME ALL EXISTS </span></span>
+<span class="line"><span style="color:#A6ACCD;"></span></span>
+<span class="line"><span style="color:#A6ACCD;"></span></span>
+<span class="line"><span style="color:#A6ACCD;"></span></span></code></pre></div><p>子查询分为如下几类：</p><ol><li><p>标量子查询：返回单一值的标量，最简单的形式。</p><div class="language-"><span class="copy"></span><pre><code><span class="line"><span style="color:#A6ACCD;">　是指子查询返回的是单一值的标量，如一个数字或一个字符串，也是子查询中最简单的返回形式。 可以使用 = &gt; &lt; &gt;= &lt;= &lt;&gt; 这些操作符对子查询的标量结果进行比较，通常子查询的位置在比较式的右侧</span></span>
+<span class="line"><span style="color:#A6ACCD;"></span></span></code></pre></div><div class="language-"><span class="copy"></span><pre><code><span class="line"><span style="color:#A6ACCD;">select * from product where price = (select price from product where price=10);</span></span>
+<span class="line"><span style="color:#A6ACCD;"></span></span>
+<span class="line"><span style="color:#A6ACCD;">select * from product where price = (select MAX(price) from product);</span></span>
+<span class="line"><span style="color:#A6ACCD;"></span></span>
+<span class="line"><span style="color:#A6ACCD;"></span></span></code></pre></div><ol start="2"><li><p>列子查询：返回的结果集是 N 行一列。</p><div class="language-"><span class="copy"></span><pre><code><span class="line"><span style="color:#A6ACCD;">指子查询返回的结果集是 N 行一列，该结果通常来自对表的某个字段查询返回。</span></span>
+<span class="line"><span style="color:#A6ACCD;">可以使用 = &gt; &lt; &gt;= &lt;= &lt;&gt; 这些操作符对子查询的标量结果进行比较，通常子查询的位置在比较式的右侧。</span></span>
+<span class="line"><span style="color:#A6ACCD;">可以使用 IN、ANY、SOME 和 ALL 操作符，不能直接使用 = &gt; &lt; &gt;= &lt;= &lt;&gt; 这些比较标量结果的操作符。</span></span>
+<span class="line"><span style="color:#A6ACCD;"></span></span></code></pre></div><div class="language-"><span class="copy"></span><pre><code><span class="line"><span style="color:#A6ACCD;">SELECT * FROM product WHERE cid IN(SELECT cid FROM product WHERE cid=2);</span></span>
+<span class="line"><span style="color:#A6ACCD;"></span></span>
+<span class="line"><span style="color:#A6ACCD;">SELECT cid FROM product WHERE cid &gt; ANY (SELECT id FROM category);</span></span>
+<span class="line"><span style="color:#A6ACCD;"></span></span>
+<span class="line"><span style="color:#A6ACCD;">SELECT cid FROM product WHERE cid &gt; ALL (SELECT id FROM category);</span></span>
+<span class="line"><span style="color:#A6ACCD;"></span></span></code></pre></div><ul><li><p>注意：</p><p>NOT IN 是 &lt;&gt; ALL 的别名，二者相同。 特殊情况 　 如果 category 为空表，则 ALL 后的结果为 TRUE； 　 如果子查询返回如 (0,NULL,1) 这种尽管 cid 比返回结果都大，但有空行的结果，则 ALL 后的结果为 UNKNOWN 。</p></li></ul></li><li><p>行子查询：返回的结果集是一行 N 列。</p><div class="language-"><span class="copy"></span><pre><code><span class="line"><span style="color:#A6ACCD;">指子查询返回的结果集是一行 N 列，该子查询的结果通常是对表的某行数据进行查询而返回的结果集。</span></span>
+<span class="line"><span style="color:#A6ACCD;"></span></span>
+<span class="line"><span style="color:#A6ACCD;"></span></span></code></pre></div><div class="language-"><span class="copy"></span><pre><code><span class="line"><span style="color:#A6ACCD;">select * from category where (id,cname) = (select id,cname from category where id=2);</span></span>
+<span class="line"><span style="color:#A6ACCD;"></span></span></code></pre></div></li><li><p>表子查询：返回的结果集是 N 行 N 列。</p><div class="language-"><span class="copy"></span><pre><code><span class="line"><span style="color:#A6ACCD;">指子查询返回的结果集是 N 行 N 列的一个表数据。</span></span>
+<span class="line"><span style="color:#A6ACCD;"></span></span></code></pre></div><div class="language-"><span class="copy"></span><pre><code><span class="line"><span style="color:#A6ACCD;"> select * from product where (pname,price,pid) in (select pname,price,pid from product);</span></span>
+<span class="line"><span style="color:#A6ACCD;"></span></span></code></pre></div></li></ol></li></ol><p><strong>一个子查询会返回一个标量（就一个值）、一个行、一个列或一个表，这些子查询称之为标量、行、列和表子查询。</strong></p><div class="language-"><span class="copy"></span><pre><code><span class="line"><span style="color:#A6ACCD;">  如果子查询返回一个标量值（就一个值），那么外部查询就可以使用：=、&gt;、&lt;、&gt;=、&lt;=和&lt;&gt;符号进行比较判断；如果子查询返回的不是一个标量值，而外部查询使用了比较符和子查询的结果进行了比较，那么就会抛出异常。</span></span>
+<span class="line"><span style="color:#A6ACCD;"></span></span></code></pre></div></li><li><p>位置</p><div class="language-"><span class="copy"></span><pre><code><span class="line"><span style="color:#A6ACCD;">select中、from后、where中。</span></span>
+<span class="line"><span style="color:#A6ACCD;"></span></span>
+<span class="line"><span style="color:#A6ACCD;">group by和order by中无实用意义。</span></span>
+<span class="line"><span style="color:#A6ACCD;"></span></span></code></pre></div></li><li><p>注意</p><div class="language-"><span class="copy"></span><pre><code><span class="line"><span style="color:#A6ACCD;">一般在子查询中，程序先运行在嵌套在最内层的语句，再运行外层。因此在写子查询语句时，可以先测试下内层的子查询语句是否输出了想要的内容，再一层层往外测试，增加子查询正确率。否则多层的嵌套使语句可读性很低。</span></span>
+<span class="line"><span style="color:#A6ACCD;"></span></span></code></pre></div></li></ul><h2 id="理解sql解析顺序" tabindex="-1">理解sql解析顺序 <a class="header-anchor" href="#理解sql解析顺序" aria-hidden="true">#</a></h2><p>接下来再走一步，让我们看看一条SQL语句的前世今生。</p><p>首先看一下示例语句:</p><div class="language-"><span class="copy"></span><pre><code><span class="line"><span style="color:#A6ACCD;">SELECT DISTINCT</span></span>
+<span class="line"><span style="color:#A6ACCD;">    &lt; select_list &gt;</span></span>
+<span class="line"><span style="color:#A6ACCD;">FROM</span></span>
+<span class="line"><span style="color:#A6ACCD;">    &lt; left_table &gt; &lt; join_type &gt;</span></span>
+<span class="line"><span style="color:#A6ACCD;">JOIN &lt; right_table &gt; ON &lt; join_condition &gt;</span></span>
+<span class="line"><span style="color:#A6ACCD;">WHERE</span></span>
+<span class="line"><span style="color:#A6ACCD;">    &lt; where_condition &gt;</span></span>
+<span class="line"><span style="color:#A6ACCD;">GROUP BY</span></span>
+<span class="line"><span style="color:#A6ACCD;">    &lt; group_by_list &gt;</span></span>
+<span class="line"><span style="color:#A6ACCD;">HAVING</span></span>
+<span class="line"><span style="color:#A6ACCD;">    &lt; having_condition &gt;</span></span>
+<span class="line"><span style="color:#A6ACCD;">ORDER BY</span></span>
+<span class="line"><span style="color:#A6ACCD;">    &lt; order_by_condition &gt;</span></span>
+<span class="line"><span style="color:#A6ACCD;">LIMIT &lt; limit_number &gt;</span></span>
+<span class="line"><span style="color:#A6ACCD;"></span></span></code></pre></div><p>然而它的执行顺序是这样的:</p><div class="language-"><span class="copy"></span><pre><code><span class="line"><span style="color:#A6ACCD;">--行过滤</span></span>
+<span class="line"><span style="color:#A6ACCD;"> 1 from &lt;left_table&gt;</span></span>
+<span class="line"><span style="color:#A6ACCD;"> 2 on &lt;join_condition&gt;</span></span>
+<span class="line"><span style="color:#A6ACCD;"> 3 &lt;join_type&gt; join &lt;right_table&gt; 第二部和第三部会循环执行</span></span>
+<span class="line"><span style="color:#A6ACCD;"> 4 where &lt;where_condition&gt; 第四部会循环执行，多个条件的执行顺序是从左往右。</span></span>
+<span class="line"><span style="color:#A6ACCD;"> 5 group by &lt;group_by_list&gt; </span></span>
+<span class="line"><span style="color:#A6ACCD;"> 6 having &lt;having_condition&gt; </span></span>
+<span class="line"><span style="color:#A6ACCD;"> --列过滤</span></span>
+<span class="line"><span style="color:#A6ACCD;"> 7 select 分组之后才会执行select</span></span>
+<span class="line"><span style="color:#A6ACCD;"> 8 distinct &lt;select_list&gt;</span></span>
+<span class="line"><span style="color:#A6ACCD;"> --排序</span></span>
+<span class="line"><span style="color:#A6ACCD;"> 9 order by &lt;order_by_condition&gt; </span></span>
+<span class="line"><span style="color:#A6ACCD;"> --mysql 附加</span></span>
+<span class="line"><span style="color:#A6ACCD;"> 10 limit &lt;limit_number&gt; </span></span>
+<span class="line"><span style="color:#A6ACCD;"></span></span></code></pre></div><p>虽然自己没想到是这样的，不过一看还是很自然和谐的，从哪里获取，不断的过滤条件，要选择一样或 不一样的，排好序，那才知道要取前几条呢。 既然如此了，那就让我们根据案例一步步来看看其中的细节吧。</p><p><strong>开始sql解析之旅</strong></p><h3 id="from" tabindex="-1">from <a class="header-anchor" href="#from" aria-hidden="true">#</a></h3><p>对from的左边的表和右边的表计算 <strong>笛卡尔积（cross join）</strong>。产生 <strong>虚表VT1</strong></p><div class="language-"><span class="copy"></span><pre><code><span class="line"><span style="color:#A6ACCD;">mysql&gt; select * from product,category;</span></span>
+<span class="line"><span style="color:#A6ACCD;">+-----+-----------------+-------+-------+------+----+--------------+</span></span>
+<span class="line"><span style="color:#A6ACCD;">| pid | pname           | price | pdate | cid  | id | cname        |</span></span>
+<span class="line"><span style="color:#A6ACCD;">+-----+-----------------+-------+-------+------+----+--------------+</span></span>
+<span class="line"><span style="color:#A6ACCD;">|   1 | 泰国大榴莲      |    98 | NULL  |    1 |  1 | 国外食品     |</span></span>
+<span class="line"><span style="color:#A6ACCD;">|   1 | 泰国大榴莲      |    98 | NULL  |    1 |  2 | 国内食品     |</span></span>
+<span class="line"><span style="color:#A6ACCD;">|   1 | 泰国大榴莲      |    98 | NULL  |    1 |  3 | 国内服饰     |</span></span>
+<span class="line"><span style="color:#A6ACCD;">|   2 | 泰国大枣        |    38 | NULL  |    1 |  1 | 国外食品     |</span></span>
+<span class="line"><span style="color:#A6ACCD;">|   2 | 泰国大枣        |    38 | NULL  |    1 |  2 | 国内食品     |</span></span>
+<span class="line"><span style="color:#A6ACCD;">|   2 | 泰国大枣        |    38 | NULL  |    1 |  3 | 国内服饰     |</span></span>
+<span class="line"><span style="color:#A6ACCD;">|   3 | 新疆切糕        |    68 | NULL  |    2 |  1 | 国外食品     |</span></span>
+<span class="line"><span style="color:#A6ACCD;">|   3 | 新疆切糕        |    68 | NULL  |    2 |  2 | 国内食品     |</span></span>
+<span class="line"><span style="color:#A6ACCD;">|   3 | 新疆切糕        |    68 | NULL  |    2 |  3 | 国内服饰     |</span></span>
+<span class="line"><span style="color:#A6ACCD;">|   4 | 十三香          |    10 | NULL  |    2 |  1 | 国外食品     |</span></span>
+<span class="line"><span style="color:#A6ACCD;">|   4 | 十三香          |    10 | NULL  |    2 |  2 | 国内食品     |</span></span>
+<span class="line"><span style="color:#A6ACCD;">|   4 | 十三香          |    10 | NULL  |    2 |  3 | 国内服饰     |</span></span>
+<span class="line"><span style="color:#A6ACCD;">|   5 | 泰国大枣        |    20 | NULL  |    2 |  1 | 国外食品     |</span></span>
+<span class="line"><span style="color:#A6ACCD;">|   5 | 泰国大枣        |    20 | NULL  |    2 |  2 | 国内食品     |</span></span>
+<span class="line"><span style="color:#A6ACCD;">|   5 | 泰国大枣        |    20 | NULL  |    2 |  3 | 国内服饰     |</span></span>
+<span class="line"><span style="color:#A6ACCD;">|   6 | 泰国大枣        |    98 | NULL  |   20 |  1 | 国外食品     |</span></span>
+<span class="line"><span style="color:#A6ACCD;">|   6 | 泰国大枣        |    98 | NULL  |   20 |  2 | 国内食品     |</span></span>
+<span class="line"><span style="color:#A6ACCD;">|   6 | 泰国大枣        |    98 | NULL  |   20 |  3 | 国内服饰     |</span></span>
+<span class="line"><span style="color:#A6ACCD;">|   7 | iphone手机      |   800 | NULL  |   30 |  1 | 国外食品     |</span></span>
+<span class="line"><span style="color:#A6ACCD;">|   7 | iphone手机      |   800 | NULL  |   30 |  2 | 国内食品     |</span></span>
+<span class="line"><span style="color:#A6ACCD;">|   7 | iphone手机      |   800 | NULL  |   30 |  3 | 国内服饰     |</span></span>
+<span class="line"><span style="color:#A6ACCD;">+-----+-----------------+-------+-------+------+----+--------------+</span></span>
+<span class="line"><span style="color:#A6ACCD;">21 rows in set (0.00 sec)</span></span>
+<span class="line"><span style="color:#A6ACCD;"></span></span></code></pre></div><h3 id="on过滤" tabindex="-1">on过滤 <a class="header-anchor" href="#on过滤" aria-hidden="true">#</a></h3><p>对虚表v t1进行on过滤，只有那些符合的行才会被记录在虚表vt2中。</p><p>**注意：**这里因为语法限制，使用了where代替，从中读者也可以感受到两者之间微妙的关系。</p><div class="language-"><span class="copy"></span><pre><code><span class="line"><span style="color:#A6ACCD;">mysql&gt; select * from product p,category c where p.cid=c.id;</span></span>
+<span class="line"><span style="color:#A6ACCD;">+-----+-----------------+-------+-------+------+----+--------------+</span></span>
+<span class="line"><span style="color:#A6ACCD;">| pid | pname           | price | pdate | cid  | id | cname        |</span></span>
+<span class="line"><span style="color:#A6ACCD;">+-----+-----------------+-------+-------+------+----+--------------+</span></span>
+<span class="line"><span style="color:#A6ACCD;">|   1 | 泰国大榴莲      |    98 | NULL  |    1 |  1 | 国外食品     |</span></span>
+<span class="line"><span style="color:#A6ACCD;">|   2 | 泰国大枣        |    38 | NULL  |    1 |  1 | 国外食品     |</span></span>
+<span class="line"><span style="color:#A6ACCD;">|   3 | 新疆切糕        |    68 | NULL  |    2 |  2 | 国内食品     |</span></span>
+<span class="line"><span style="color:#A6ACCD;">|   4 | 十三香          |    10 | NULL  |    2 |  2 | 国内食品     |</span></span>
+<span class="line"><span style="color:#A6ACCD;">|   5 | 泰国大枣        |    20 | NULL  |    2 |  2 | 国内食品     |</span></span>
+<span class="line"><span style="color:#A6ACCD;">+-----+-----------------+-------+-------+------+----+--------------+</span></span>
+<span class="line"><span style="color:#A6ACCD;">5 rows in set (0.00 sec)</span></span>
+<span class="line"><span style="color:#A6ACCD;"></span></span></code></pre></div><h3 id="outer-join添加外部列" tabindex="-1">outer join添加外部列 <a class="header-anchor" href="#outer-join添加外部列" aria-hidden="true">#</a></h3><p>如果指定了outer join (比如left join 、right join),那么 <strong>保留表中未匹配的行</strong> 就会作为外部行添加到虚拟表vt2中，产生虚拟表 vt3。</p><p>如果from子句中包含两个以上的表的话，那么就会对上一个join连接产生的结果vt3和下一个表重复执行步骤1～3三个步骤，一直到处理完所有的表为止。</p><div class="language-"><span class="copy"></span><pre><code><span class="line"><span style="color:#A6ACCD;">mysql&gt; select * from product p left outer join category c on p.cid=c.id;# 以左表 数据为准</span></span>
+<span class="line"><span style="color:#A6ACCD;">+-----+-----------------+-------+-------+------+------+--------------+</span></span>
+<span class="line"><span style="color:#A6ACCD;">| pid | pname           | price | pdate | cid  | id   | cname        |</span></span>
+<span class="line"><span style="color:#A6ACCD;">+-----+-----------------+-------+-------+------+------+--------------+</span></span>
+<span class="line"><span style="color:#A6ACCD;">|   1 | 泰国大榴莲      |    98 | NULL  |    1 |    1 | 国外食品     |</span></span>
+<span class="line"><span style="color:#A6ACCD;">|   2 | 泰国大枣        |    38 | NULL  |    1 |    1 | 国外食品     |</span></span>
+<span class="line"><span style="color:#A6ACCD;">|   3 | 新疆切糕        |    68 | NULL  |    2 |    2 | 国内食品     |</span></span>
+<span class="line"><span style="color:#A6ACCD;">|   4 | 十三香          |    10 | NULL  |    2 |    2 | 国内食品     |</span></span>
+<span class="line"><span style="color:#A6ACCD;">|   5 | 泰国大枣        |    20 | NULL  |    2 |    2 | 国内食品     |</span></span>
+<span class="line"><span style="color:#A6ACCD;">|   6 | 泰国大枣        |    98 | NULL  |   20 | NULL | NULL         |</span></span>
+<span class="line"><span style="color:#A6ACCD;">|   7 | iphone手机      |   800 | NULL  |   30 | NULL | NULL         |</span></span>
+<span class="line"><span style="color:#A6ACCD;">+-----+-----------------+-------+-------+------+------+--------------+</span></span>
+<span class="line"><span style="color:#A6ACCD;">7 rows in set (0.00 sec)</span></span>
+<span class="line"><span style="color:#A6ACCD;"></span></span>
+<span class="line"><span style="color:#A6ACCD;">mysql&gt; select * from product p right outer join category c on p.cid=c.id;#以右表 数据为准</span></span>
+<span class="line"><span style="color:#A6ACCD;">+------+-----------------+-------+-------+------+----+--------------+</span></span>
+<span class="line"><span style="color:#A6ACCD;">| pid  | pname           | price | pdate | cid  | id | cname        |</span></span>
+<span class="line"><span style="color:#A6ACCD;">+------+-----------------+-------+-------+------+----+--------------+</span></span>
+<span class="line"><span style="color:#A6ACCD;">|    1 | 泰国大榴莲      |    98 | NULL  |    1 |  1 | 国外食品     |</span></span>
+<span class="line"><span style="color:#A6ACCD;">|    2 | 泰国大枣        |    38 | NULL  |    1 |  1 | 国外食品     |</span></span>
+<span class="line"><span style="color:#A6ACCD;">|    3 | 新疆切糕        |    68 | NULL  |    2 |  2 | 国内食品     |</span></span>
+<span class="line"><span style="color:#A6ACCD;">|    4 | 十三香          |    10 | NULL  |    2 |  2 | 国内食品     |</span></span>
+<span class="line"><span style="color:#A6ACCD;">|    5 | 泰国大枣        |    20 | NULL  |    2 |  2 | 国内食品     |</span></span>
+<span class="line"><span style="color:#A6ACCD;">| NULL | NULL            |  NULL | NULL  | NULL |  3 | 国内服饰     |</span></span>
+<span class="line"><span style="color:#A6ACCD;">+------+-----------------+-------+-------+------+----+--------------+</span></span>
+<span class="line"><span style="color:#A6ACCD;">6 rows in set (0.00 sec)</span></span>
+<span class="line"><span style="color:#A6ACCD;"></span></span>
+<span class="line"><span style="color:#A6ACCD;"></span></span></code></pre></div><h3 id="where" tabindex="-1">where <a class="header-anchor" href="#where" aria-hidden="true">#</a></h3><p>对虚拟表 vt3 进行where 条件过滤，只有符合的记录才会被插入到虚拟表vt4中。</p><p><strong>注意：</strong></p><p>此时因为分组，不能使用聚合运算；也不能使用select中创建的别名;</p><p><strong>与on的区别：</strong></p><ul><li>如果有外部列，on针对过滤的是关键表，主表（保留表）会返回所有列；</li><li>如果没有添加外部列，两者的效果是一样的；</li></ul><p><strong>应用：</strong></p><ul><li><p>对主表的过滤应该放在where;</p></li><li><p>对与关联表，先条件查询后连接则用on，先连接后条件查询则用where;</p><div class="language-"><span class="copy"></span><pre><code><span class="line"><span style="color:#A6ACCD;">mysql&gt; select * from product p left outer join category c on p.cid=c.id where p.pname=&#39;泰国大枣&#39;;</span></span>
+<span class="line"><span style="color:#A6ACCD;">+-----+--------------+-------+-------+------+------+--------------+</span></span>
+<span class="line"><span style="color:#A6ACCD;">| pid | pname        | price | pdate | cid  | id   | cname        |</span></span>
+<span class="line"><span style="color:#A6ACCD;">+-----+--------------+-------+-------+------+------+--------------+</span></span>
+<span class="line"><span style="color:#A6ACCD;">|   2 | 泰国大枣     |    38 | NULL  |    1 |    1 | 国外食品     |</span></span>
+<span class="line"><span style="color:#A6ACCD;">|   5 | 泰国大枣     |    20 | NULL  |    2 |    2 | 国内食品     |</span></span>
+<span class="line"><span style="color:#A6ACCD;">|   6 | 泰国大枣     |    98 | NULL  |   20 | NULL | NULL         |</span></span>
+<span class="line"><span style="color:#A6ACCD;">+-----+--------------+-------+-------+------+------+--------------+</span></span>
+<span class="line"><span style="color:#A6ACCD;">3 rows in set (0.00 sec)</span></span>
+<span class="line"><span style="color:#A6ACCD;"></span></span>
+<span class="line"><span style="color:#A6ACCD;"></span></span></code></pre></div></li></ul><h2 id="理解多表间关联" tabindex="-1">理解多表间关联 <a class="header-anchor" href="#理解多表间关联" aria-hidden="true">#</a></h2><h2 id="掌握多表关联查询及子查询" tabindex="-1">掌握多表关联查询及子查询 <a class="header-anchor" href="#掌握多表关联查询及子查询" aria-hidden="true">#</a></h2></div></div></div><div class="footer" data-v-76de30a3><div class="edit-link" data-v-76de30a3 data-v-3c031474><a class="link" href="https://github.com/hu5871/hu5871.github.io" target="_blank" rel="noopener noreferrer" data-v-3c031474>为此页提供修改建议 <svg class="icon outbound icon" xmlns="http://www.w3.org/2000/svg" aria-hidden="true" x="0px" y="0px" viewbox="0 0 100 100" width="15" height="15" data-v-3c031474><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path><polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg></a></div></div><!----></div></div></div></div>
+    <script>__VP_HASH_MAP__ = JSON.parse("{\"readme.md\":\"25cc074b\",\"index.md\":\"b2f5515e\",\"pages_dsaa_algorithm.md\":\"f06a6f9b\",\"pages_dsaa_datastructure.md\":\"41bc2fec\",\"pages_engineering_index.md\":\"7347cab7\",\"pages_ide_index.md\":\"82b84a12\",\"pages_containerandintegration_docker.md\":\"e59c2c48\",\"pages_containerandintegration_jenkins.md\":\"ac0479cc\",\"pages_designpattern_index.md\":\"fc8c3c9a\",\"pages_js_cssandhtml.md\":\"f2180af1\",\"pages_js_git.md\":\"4dcfcc41\",\"pages_js_http.md\":\"d2349f1a\",\"pages_js_javascriptad.md\":\"ea938a03\",\"pages_js_js.md\":\"a2affd2f\",\"pages_js_vue.md\":\"dbaaf810\",\"pages_js_wx.md\":\"5e3987df\",\"pages_mysql_mysql.md\":\"3b988821\",\"pages_ts_index.md\":\"83dcb4c9\",\"pages_uselibrary_index.md\":\"f597b8c9\",\"pages_utils_index.md\":\"d8b7d0ad\",\"pages_vue_diff.md\":\"1395e5e1\",\"pages_vue_reactivity.md\":\"0164608e\"}")</script>
+    <script type="module" async src="/assets/app.9bf12d60.js"></script>
     
   </body>
 </html>

@@ -1,1 +1,0 @@
-import{_ as n,c as s,o as a,d as p}from"./app.9fda2e54.js";const d='{"title":"webppack","description":"","frontmatter":{},"headers":[{"level":3,"title":"webppack","slug":"webppack"}],"relativePath":"pages/Engineering/index.md"}',t={},e=p("",3),o=[e];function c(l,r,k,u,i,m){return a(),s("div",null,o)}var y=n(t,[["render",c]]);export{d as __pageData,y as default};
