@@ -146,7 +146,7 @@ docker -v
 
    打开Dockerfile，写入：
 
-   ```dockerfile
+   ```
    FROM nginx  
    COPY dist/ /usr/share/nginx/html/  
    COPY default.conf /etc/nginx/conf.d/default.conf 

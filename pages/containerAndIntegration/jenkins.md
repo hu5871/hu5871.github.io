@@ -34,7 +34,7 @@
 
   - --env JAVA_OPTS="-Duser.timezone=GMT+08"   将中国时区号传递给Jenkins启动参数，中国在东8区
 
-- **访问自己指定的端口 http://localhost:8080（我这是-p 8080）**
+- **浏览器访问自己指定的端口 localhost:8080（我这是-p 8080）**
 
   - 需要密码
 
