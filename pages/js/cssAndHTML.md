@@ -33,7 +33,7 @@
   }
   .son{
     font-size:30px;
-    /*line-height 继承1.5 30*1.5 =90px */
+    /*line-height 继承1.5 30*1.5 =45px */
   }
   ```
 
