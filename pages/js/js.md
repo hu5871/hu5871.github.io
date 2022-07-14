@@ -241,6 +241,15 @@ console.log([NaN].indexOf(NaN)) // -1
 
 
 
+### 对象属性是有序的吗
+
+>  从ES2020开始 `Object.key`、`for...in`、`Object.getOwnPropertyNames`和`Reflect.ownKeys`都遵循同一个规范顺序。它们是：
+
+-  **按数字索引升序排列**
+-  **自身的 Symbol 属性，按创建时间顺序递增**
+
+
+
 ### 浏览器输入url回车后都发生了什么
 
 1. ##### 首先是dns，通过域名解析出真实的服务器ip地址
